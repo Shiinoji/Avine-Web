@@ -617,6 +617,15 @@ function initAuth() {
     }
   };
   document.querySelectorAll("[data-auth-switch]").forEach((button) => button.addEventListener("click", () => switchForm(button.dataset.authSwitch)));
+  document.querySelectorAll("[data-password-toggle]").forEach((button) => button.addEventListener("click", () => {
+    const input = button.parentElement.querySelector('input[type="password"], input[type="text"]');
+    if (!input) return;
+    const visible = input.type === "password";
+    input.type = visible ? "text" : "password";
+    button.textContent = visible ? "Hide" : "Show";
+    button.setAttribute("aria-label", `${visible ? "Hide" : "Show"} password`);
+    button.setAttribute("aria-pressed", String(visible));
+  }));
   if (params.get("mode") === "signup") switchForm("signup");
   const forgot = document.querySelector("[data-forgot-password]");
   if (forgot) forgot.addEventListener("click", (event) => {

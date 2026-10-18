@@ -84,6 +84,11 @@ a,button{-webkit-focus-ring-color:transparent}
 .toast{border-radius:3px;box-shadow:0 10px 35px rgba(0,0,0,.18)}.auth-panel{background:radial-gradient(ellipse at 80% 12%,rgba(226,233,217,.4),transparent 42%)}
 .auth-form-box{padding:35px 0}
 .auth-form-box input:not([type=checkbox]),.google-button{border-radius:2px}
+.password-input-wrap{position:relative;display:block}
+.password-input-wrap input{padding-right:58px!important}
+.password-toggle{position:absolute;top:50%;right:11px;transform:translateY(-50%);border:0;background:transparent;padding:6px 2px;color:var(--muted);font-size:10px;font-weight:600;cursor:pointer}
+.password-toggle:hover,.password-toggle:focus-visible{color:var(--ink)}
+.password-toggle:focus-visible{outline:2px solid #829073;outline-offset:2px}
 .auth-submit{box-shadow:0 8px 22px rgba(35,44,36,.12)}
 .dark .product-card{background:var(--surface);border-color:#354038}
 .dark .product-image{mix-blend-mode:normal}
