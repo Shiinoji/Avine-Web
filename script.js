@@ -359,7 +359,7 @@ function productCard(product) {
     </div>
     <p class="product-description">${description}</p>
     <div class="product-actions mx-[14px] mt-2 flex gap-2 max-[760px]:mx-[10px] max-[760px]:mt-[7px]">
-      <button class="product-add flex h-[35px] min-w-0 flex-1 cursor-pointer items-center justify-center border border-[var(--line)] bg-transparent px-1 text-center text-[10px] transition-colors hover:border-[var(--ink)] hover:bg-[var(--ink)] hover:text-white dark:hover:border-[var(--ink)] dark:hover:bg-[var(--ink)] max-[760px]:text-[9px]" data-add-cart="${product.id}">Add to cart <span class="max-[760px]:hidden">+</span></button>
+      <button class="product-add flex h-[35px] min-w-0 flex-1 cursor-pointer items-center justify-center border border-[var(--line)] bg-transparent px-1 text-center text-[10px] transition-colors hover:border-[var(--ink)] hover:bg-[var(--ink)] hover:text-white dark:hover:border-[var(--ink)] dark:hover:bg-[var(--ink)] max-[760px]:text-[9px]" data-add-cart="${product.id}">Add to cart</button>
       <button class="product-add buy-now flex h-[35px] min-w-0 flex-1 cursor-pointer items-center justify-center border border-[var(--accent-dark)] bg-[var(--accent-dark)] px-1 text-center text-[10px] text-white transition-colors hover:border-[var(--ink)] hover:bg-[var(--ink)] dark:hover:border-[var(--ink)] dark:hover:bg-[var(--ink)] max-[760px]:text-[9px]" data-buy-now="${product.id}">Buy now</button>
     </div>
   </article>`;
