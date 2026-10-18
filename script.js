@@ -62,6 +62,16 @@ const products = [
     description:
       "NVIDIA Ada Lovelace · 6,144 CUDA cores · 8GB GDDR6 · 128-bit memory bus. Gigabyte WINDFORCE cooling system, RGB Fusion support, exact board model and boost clocks unverified. ",
   },
+  {
+    id: "aula-sc900-pro-mouse",
+    name: "AULA SC900 Pro Mouse",
+    category: "Accessories",
+    price: 699,
+    tag: "Est. price",
+    image: "assets/AULA SC900 Pro Mouse.jpg",
+    description:
+      "PAW3395 sensor · 8KHz polling rate · Tri-Mode connectivity (Type-C, Bluetooth, 2.4GHz) · 50g ultra-light wireless design. Rechargeable battery, included extra grips and skate. Sensitivity up to 26,000 DPI · 50G acceleration · 650 IPS tracking speed. Exact battery life and firmware details unverified.",
+  },
 ];
 
 // Uses the Philippine peso format consistently across the storefront.
