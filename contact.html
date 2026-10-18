@@ -1,16 +1,359 @@
 <!DOCTYPE html>
-<html lang="en-PH" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#f4f2eb"><title>Get in touch — AVINE</title>
-  <script>if(localStorage.getItem('avine-theme')==='dark')document.documentElement.classList.add('dark');</script><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Manrope','sans-serif']}}}}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
-</head>
-<body data-page="contact">
-  <div class="announcement flex h-8 items-center justify-center gap-1.5 bg-[#222b24] text-[10px] tracking-[.07em] text-[#f8f8f3] dark:bg-[#101612] dark:text-[#edf1e9]">A little something for your everyday <span class="text-[#c1d49b] dark:text-[#c7d9ad]">— free delivery on orders over ₱5,000</span></div>
-  <header class="site-header relative z-10 flex h-[82px] items-center justify-between border-b border-[var(--line)] bg-[var(--paper)] px-[52px] max-[1200px]:px-[30px] max-[760px]:h-[68px] max-[760px]:px-4 sticky top-0 shadow-[0_5px_24px_rgba(35,44,36,.035)] backdrop-blur-[16px] dark:bg-[rgba(23,29,25,.96)] dark:border-[var(--line)]"><a class="brand" href="index.html" aria-label="Avine home">AVINE<span class="brand-dot">.</span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="main-nav min-[761px]:flex items-center gap-[31px] ml-[5%] max-[1200px]:gap-[19px] max-[1200px]:ml-[1%]" aria-label="Main navigation"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about-faq.html">About &amp; FAQ</a><a class="active text-[var(--ink)] text-[12px] text-[var(--muted)] transition-colors hover:text-[var(--ink)] dark:text-[#edf1e9]" href="contact.html">Contact</a></nav><div class="header-actions flex items-center gap-[22px] max-[1200px]:gap-3 max-[760px]:gap-2 max-[390px]:gap-[7px]"><form class="search-form flex h-[34px] w-[178px] items-center border-b border-[var(--line)] max-[1200px]:w-[135px] max-[760px]:w-auto max-[760px]:border-0" action="shop.html"><input class="w-full border-0 bg-transparent text-[11px] text-[var(--ink)] outline-none" name="q" placeholder="Search products" aria-label="Search products"><button aria-label="Search"><svg class="h-[17px] w-[17px] fill-none stroke-current" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg></button></form><button class="theme-toggle inline-flex cursor-pointer items-center border-0 bg-transparent p-[5px]" aria-label="Switch color theme"><svg class="h-[17px] w-[17px] fill-none stroke-current sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg><svg class="h-[17px] w-[17px] fill-none stroke-current moon-icon" viewBox="0 0 24 24"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"></path></svg></button><a class="login-link text-[11px]" href="auth.html">Log in</a><a class="cart-link flex items-center gap-[7px] whitespace-nowrap text-[11px]" href="auth.html"><svg class="h-[17px] w-[17px] fill-none stroke-current" viewBox="0 0 24 24"><path d="M3 3h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span>Cart (<b data-cart-count>0</b>)</span></a></div></header>
-  <main><section class="contact-heading section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]"><p class="eyebrow"><a href="index.html">HOME</a> <span>/</span> CONTACT</p><div class="contact-title-row"><div><h1 class="font-[var(--display)] text-[clamp(58px,7.4vw,106px)] font-medium leading-[.95] tracking-[-.075em] mb-[22px]">Let's talk<span class="brand-dot">.</span></h1><p>Questions, thoughts, a little hello—we're all ears.</p></div><span class="shop-side-note">REAL PEOPLE.<br>REAL ANSWERS.</span></div></section>
-    <section class="section-wrap contact-layout mx-auto grid w-[min(1280px,calc(100%-104px))] grid-cols-[1.06fr_.94fr] gap-[9%] pb-[105px] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)] max-[760px]:grid-cols-1 max-[760px]:gap-9 max-[760px]:pb-[70px]"><div class="contact-form-wrap"><p class="eyebrow">DROP US A LINE</p><h2>How can we help?</h2><form class="contact-form grid grid-cols-2 gap-x-4 gap-y-5 max-[760px]:gap-x-[10px] max-[760px]:gap-y-4 max-[560px]:grid-cols-1"><label class="flex flex-col gap-[9px] text-[10px] font-semibold max-[760px]:text-[9px]">Full name<input type="text" name="name" placeholder="Your name" autocomplete="name" required></label><label class="flex flex-col gap-[9px] text-[10px] font-semibold max-[760px]:text-[9px]">Email address<input type="email" name="email" placeholder="you@example.com" autocomplete="email" required></label><label class="col-span-full flex flex-col gap-[9px] text-[10px] font-semibold max-[760px]:text-[9px] max-[560px]:col-span-1">What's it about?<select name="subject" required><option value="" disabled selected>Choose a topic</option><option>Order question</option><option>General inquiry</option><option>Technical support</option><option>Returns &amp; warranty</option></select></label><label class="col-span-full flex flex-col gap-[9px] text-[10px] font-semibold max-[760px]:text-[9px] max-[560px]:col-span-1">Your message<textarea name="message" placeholder="Tell us what's on your mind..." rows="5" required></textarea></label><button class="button button-dark inline-flex min-h-[47px] items-center justify-center gap-[30px] border border-transparent px-5 text-[11px] font-semibold transition duration-200 hover:-translate-y-0.5 bg-[#222b24] text-white hover:bg-[#39483b] w-max mt-[2px] cursor-pointer" type="submit">Send message <span>↗</span></button><p class="form-success" role="status" aria-live="polite">Submitted successfully! We will get back to you soon.</p></div><aside class="reach-column"><div class="reach-card"><p class="eyebrow">THE HUMAN BIT</p><h2>Reach us, your way.</h2><div class="reach-detail"><span>01 / EMAIL</span><a href="mailto:hello@avine.ph">hello@avine.ph ↗</a></div><div class="reach-detail"><span>02 / PHONE</span><a href="tel:+63285550146">+63 (2) 8555-0146</a></div><div class="reach-detail"><span>03 / HOURS</span><p>Monday – Friday<br>9:00am – 6:00pm PHT</p></div><p class="reach-note">We usually get back to you within one Philippine business day.</p></div><a class="map-card" href="https://maps.google.com/?q=Central+Bicol+State+University+of+Agriculture-Sipocot" target="_blank" rel="noopener noreferrer" aria-label="Open Central Bicol State University of Agriculture-Sipocot in Google Maps"><div class="map-art"><span class="map-road road-one"></span><span class="map-road road-two"></span><span class="map-road road-three"></span><span class="map-park"></span><span class="map-pin">C</span><span class="map-label">CENTRAL BICOL STATE UNIVERSITY<br>OF AGRICULTURE - SIPOCOT</span></div><div class="map-caption"><div><span>OUR CAMPUS</span><p>Central Bicol State University of Agriculture-Sipocot</p></div><span>Sipocot,<br>Camarines Sur</span></div></a></aside></section>
+<html class="scroll-smooth" lang="en-PH">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f4f2eb" name="theme-color"/>
+  <title>
+   Get in touch — AVINE
+  </title>
+  <script>
+   if(localStorage.getItem('avine-theme')==='dark')document.documentElement.classList.add('dark');
+  </script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Manrope','sans-serif']}}}}
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body data-page="contact">
+  <div class="announcement flex h-8 items-center justify-center gap-1.5 bg-[#222b24] text-[10px] tracking-[.07em] text-[#f8f8f3] dark:bg-[#101612] dark:text-[#edf1e9]">
+   A little something for your everyday
+   <span class="text-[#c1d49b] dark:text-[#c7d9ad]">
+    — free delivery on orders over ₱5,000
+   </span>
+  </div>
+  <header class="site-header relative z-10 flex h-[82px] items-center justify-between border-b border-[var(--line)] bg-[var(--paper)] px-[52px] max-[1200px]:px-[30px] max-[760px]:h-[68px] max-[760px]:px-4 sticky top-0 shadow-[0_5px_24px_rgba(35,44,36,.035)] backdrop-blur-[16px] dark:bg-[rgba(23,29,25,.96)] dark:border-[var(--line)]">
+   <a aria-label="Avine home" class="brand" href="index.html">
+    AVINE
+    <span class="brand-dot">
+     .
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">
+    <span>
+    </span>
+    <span>
+    </span>
+   </button>
+   <nav aria-label="Main navigation" class="main-nav min-[761px]:flex items-center gap-[31px] ml-[5%] max-[1200px]:gap-[19px] max-[1200px]:ml-[1%]">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="shop.html">
+     Shop
+    </a>
+    <a href="about-faq.html">
+     About &amp; FAQ
+    </a>
+    <a class="active text-[var(--ink)] text-[12px] text-[var(--muted)] transition-colors hover:text-[var(--ink)] dark:text-[#edf1e9]" href="contact.html">
+     Contact
+    </a>
+   </nav>
+   <div class="header-actions flex items-center gap-[22px] max-[1200px]:gap-3 max-[760px]:gap-2 max-[390px]:gap-[7px]">
+    <form action="shop.html" class="search-form flex h-[34px] w-[178px] items-center border-b border-[var(--line)] max-[1200px]:w-[135px] max-[760px]:w-auto max-[760px]:border-0">
+     <input aria-label="Search products" class="w-full border-0 bg-transparent text-[11px] text-[var(--ink)] outline-none" name="q" placeholder="Search products"/>
+     <button aria-label="Search">
+      <svg class="h-[17px] w-[17px] fill-none stroke-current" viewbox="0 0 24 24">
+       <circle cx="11" cy="11" r="7">
+       </circle>
+       <path d="m16 16 4 4">
+       </path>
+      </svg>
+     </button>
+    </form>
+    <button aria-label="Switch color theme" class="theme-toggle inline-flex cursor-pointer items-center border-0 bg-transparent p-[5px]">
+     <svg class="h-[17px] w-[17px] fill-none stroke-current sun-icon" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" r="4">
+      </circle>
+      <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42">
+      </path>
+     </svg>
+     <svg class="h-[17px] w-[17px] fill-none stroke-current moon-icon" viewbox="0 0 24 24">
+      <path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z">
+      </path>
+     </svg>
+    </button>
+    <a class="login-link text-[11px]" href="auth.html">
+     Log in
+    </a>
+    <a class="cart-link flex items-center gap-[7px] whitespace-nowrap text-[11px]" href="auth.html">
+     <svg class="h-[17px] w-[17px] fill-none stroke-current" viewbox="0 0 24 24">
+      <path d="M3 3h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6">
+      </path>
+      <circle cx="10" cy="20" r="1">
+      </circle>
+      <circle cx="18" cy="20" r="1">
+      </circle>
+     </svg>
+     <span>
+      Cart (
+      <b data-cart-count="">
+       0
+      </b>
+      )
+     </span>
+    </a>
+   </div>
+  </header>
+  <main>
+   <section class="contact-heading section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]">
+    <p class="eyebrow">
+     <a href="index.html">
+      HOME
+     </a>
+     <span>
+      /
+     </span>
+     CONTACT
+    </p>
+    <div class="contact-title-row">
+     <div>
+      <h1 class="font-[var(--display)] text-[clamp(58px,7.4vw,106px)] font-medium leading-[.95] tracking-[-.075em] mb-[22px]">
+       Let's talk
+       <span class="brand-dot">
+        .
+       </span>
+      </h1>
+      <p>
+       Questions, thoughts, a little hello—we're all ears.
+      </p>
+     </div>
+     <span class="shop-side-note">
+      REAL PEOPLE.
+      <br/>
+      REAL ANSWERS.
+     </span>
+    </div>
+   </section>
+   <section class="section-wrap contact-layout mx-auto grid w-[min(1280px,calc(100%-104px))] grid-cols-[1.06fr_.94fr] gap-[9%] pb-[105px] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)] max-[760px]:grid-cols-1 max-[760px]:gap-9 max-[760px]:pb-[70px]">
+    <div class="contact-form-wrap">
+     <p class="eyebrow">
+      DROP US A LINE
+     </p>
+     <h2>
+      How can we help?
+     </h2>
+     <form class="contact-form grid grid-cols-2 gap-x-4 gap-y-5 max-[760px]:gap-x-[10px] max-[760px]:gap-y-4 max-[560px]:grid-cols-1">
+      <label class="flex flex-col gap-[9px] text-[10px] font-semibold max-[760px]:text-[9px]">
+       Full name
+       <input autocomplete="name" name="name" placeholder="Your name" required="" type="text"/>
+      </label>
+      <label class="flex flex-col gap-[9px] text-[10px] font-semibold max-[760px]:text-[9px]">
+       Email address
+       <input autocomplete="email" name="email" placeholder="you@example.com" required="" type="email"/>
+      </label>
+      <label class="col-span-full flex flex-col gap-[9px] text-[10px] font-semibold max-[760px]:text-[9px] max-[560px]:col-span-1">
+       What's it about?
+       <select name="subject" required="">
+        <option disabled="" selected="" value="">
+         Choose a topic
+        </option>
+        <option>
+         Order question
+        </option>
+        <option>
+         General inquiry
+        </option>
+        <option>
+         Technical support
+        </option>
+        <option>
+         Returns &amp; warranty
+        </option>
+       </select>
+      </label>
+      <label class="col-span-full flex flex-col gap-[9px] text-[10px] font-semibold max-[760px]:text-[9px] max-[560px]:col-span-1">
+       Your message
+       <textarea name="message" placeholder="Tell us what's on your mind..." required="" rows="5"></textarea>
+      </label>
+      <button class="button button-dark inline-flex min-h-[47px] items-center justify-center gap-[30px] border border-transparent px-5 text-[11px] font-semibold transition duration-200 hover:-translate-y-0.5 bg-[#222b24] text-white hover:bg-[#39483b] w-max mt-[2px] cursor-pointer" type="submit">
+       Send message
+       <span>
+        ↗
+       </span>
+      </button>
+      <p aria-live="polite" class="form-success" role="status">
+       Submitted successfully! We will get back to you soon.
+      </p>
+     </form>
+    </div>
+    <aside class="reach-column">
+     <div class="reach-card">
+      <p class="eyebrow">
+       THE HUMAN BIT
+      </p>
+      <h2>
+       Reach us, your way.
+      </h2>
+      <div class="reach-detail">
+       <span>
+        01 / EMAIL
+       </span>
+       <a href="mailto:hello@avine.ph">
+        hello@avine.ph ↗
+       </a>
+      </div>
+      <div class="reach-detail">
+       <span>
+        02 / PHONE
+       </span>
+       <a href="tel:+63285550146">
+        +63 (2) 8555-0146
+       </a>
+      </div>
+      <div class="reach-detail">
+       <span>
+        03 / HOURS
+       </span>
+       <p>
+        Monday – Friday
+        <br/>
+        9:00am – 6:00pm PHT
+       </p>
+      </div>
+      <p class="reach-note">
+       We usually get back to you within one Philippine business day.
+      </p>
+     </div>
+     <a aria-label="Open Central Bicol State University of Agriculture-Sipocot in Google Maps" class="map-card" href="https://maps.google.com/?q=Central+Bicol+State+University+of+Agriculture-Sipocot" rel="noopener noreferrer" target="_blank">
+      <div class="map-art">
+       <span class="map-road road-one">
+       </span>
+       <span class="map-road road-two">
+       </span>
+       <span class="map-road road-three">
+       </span>
+       <span class="map-park">
+       </span>
+       <span class="map-pin">
+        C
+       </span>
+       <span class="map-label">
+        CENTRAL BICOL STATE UNIVERSITY
+        <br/>
+        OF AGRICULTURE - SIPOCOT
+       </span>
+      </div>
+      <div class="map-caption">
+       <div>
+        <span>
+         OUR CAMPUS
+        </span>
+        <p>
+         Central Bicol State University of Agriculture-Sipocot
+        </p>
+       </div>
+       <span>
+        Sipocot,
+        <br/>
+        Camarines Sur
+       </span>
+      </div>
+     </a>
+    </aside>
+   </section>
   </main>
-  <footer class="site-footer"><div class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]"><div class="footer-top grid grid-cols-[1.3fr_.7fr_.8fr_.8fr_1.35fr] gap-[35px] pb-[57px] max-[1200px]:grid-cols-[1.1fr_.7fr_.8fr_.8fr_1.2fr] max-[1200px]:gap-5 max-[760px]:grid-cols-2 max-[760px]:gap-x-[18px] max-[760px]:gap-y-8 max-[760px]:pb-[35px]"><div class="footer-brand"><a class="brand" href="index.html">AVINE<span class="brand-dot">.</span></a><p>Good things, thoughtfully made.<br>Technology for the life you live.</p></div><div class="footer-column"><h4>Explore</h4><a href="shop.html">Shop all</a><a href="shop.html?category=Phones">Phones</a><a href="shop.html?category=Audio">Audio</a><a href="about-faq.html">Our story</a></div><div class="footer-column"><h4>We're here</h4><a href="about-faq.html#faq">FAQs</a><a href="contact.html">Contact us</a><a href="contact.html">Shipping &amp; returns</a><a href="auth.html">My account</a></div><div class="footer-column footer-social"><h4>Follow along</h4><a href="https://www.instagram.com/">Instagram ↗</a><a href="https://www.pinterest.com/">Pinterest ↗</a><a href="https://www.tiktok.com/">TikTok ↗</a></div><div class="footer-newsletter"><h4>A good email, occasionally.</h4><p>New things, thoughtful notes. Never noise.</p><form class="newsletter-form flex"><input class="min-w-0 flex-1 bg-transparent" type="email" placeholder="Your email address" aria-label="Your email address" required><button aria-label="Subscribe">↗</button></form></div></div><div class="footer-bottom flex items-center justify-between border-t border-[#495148] pt-[17px] text-[8px] text-[#aeb5ab] dark:border-[#374138] max-[760px]:grid max-[760px]:grid-cols-[1fr_auto] max-[760px]:gap-3"><span>© Avine. All rights reserved.</span><span>MADE FOR THE MOMENTS IN BETWEEN.</span><a href="about-faq.html">Terms &amp; privacy</a></div></div></footer><div class="toast" role="status" aria-live="polite"></div><script src="script.js"></script>
-</body>
+  <footer class="site-footer">
+   <div class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]">
+    <div class="footer-top grid grid-cols-[1.3fr_.7fr_.8fr_.8fr_1.35fr] gap-[35px] pb-[57px] max-[1200px]:grid-cols-[1.1fr_.7fr_.8fr_.8fr_1.2fr] max-[1200px]:gap-5 max-[760px]:grid-cols-2 max-[760px]:gap-x-[18px] max-[760px]:gap-y-8 max-[760px]:pb-[35px]">
+     <div class="footer-brand">
+      <a class="brand" href="index.html">
+       AVINE
+       <span class="brand-dot">
+        .
+       </span>
+      </a>
+      <p>
+       Good things, thoughtfully made.
+       <br/>
+       Technology for the life you live.
+      </p>
+     </div>
+     <div class="footer-column">
+      <h4>
+       Explore
+      </h4>
+      <a href="shop.html">
+       Shop all
+      </a>
+      <a href="shop.html?category=Phones">
+       Phones
+      </a>
+      <a href="shop.html?category=Audio">
+       Audio
+      </a>
+      <a href="about-faq.html">
+       Our story
+      </a>
+     </div>
+     <div class="footer-column">
+      <h4>
+       We're here
+      </h4>
+      <a href="about-faq.html#faq">
+       FAQs
+      </a>
+      <a href="contact.html">
+       Contact us
+      </a>
+      <a href="contact.html">
+       Shipping &amp; returns
+      </a>
+      <a href="auth.html">
+       My account
+      </a>
+     </div>
+     <div class="footer-column footer-social">
+      <h4>
+       Follow along
+      </h4>
+      <a href="https://www.instagram.com/">
+       Instagram ↗
+      </a>
+      <a href="https://www.pinterest.com/">
+       Pinterest ↗
+      </a>
+      <a href="https://www.tiktok.com/">
+       TikTok ↗
+      </a>
+     </div>
+     <div class="footer-newsletter">
+      <h4>
+       A good email, occasionally.
+      </h4>
+      <p>
+       New things, thoughtful notes. Never noise.
+      </p>
+      <form class="newsletter-form flex">
+       <input aria-label="Your email address" class="min-w-0 flex-1 bg-transparent" placeholder="Your email address" required="" type="email"/>
+       <button aria-label="Subscribe">
+        ↗
+       </button>
+      </form>
+     </div>
+    </div>
+    <div class="footer-bottom flex items-center justify-between border-t border-[#495148] pt-[17px] text-[8px] text-[#aeb5ab] dark:border-[#374138] max-[760px]:grid max-[760px]:grid-cols-[1fr_auto] max-[760px]:gap-3">
+     <span>
+      © Avine. All rights reserved.
+     </span>
+     <span>
+      MADE FOR THE MOMENTS IN BETWEEN.
+     </span>
+     <a href="about-faq.html">
+      Terms &amp; privacy
+     </a>
+    </div>
+   </div>
+  </footer>
+  <div aria-live="polite" class="toast" role="status">
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
 </html>
+

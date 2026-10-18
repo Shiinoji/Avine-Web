@@ -1,18 +1,395 @@
 <!DOCTYPE html>
-<html lang="en-PH" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#f4f2eb"><title>Our story &amp; FAQs — AVINE</title>
-  <script>if(localStorage.getItem('avine-theme')==='dark')document.documentElement.classList.add('dark');</script><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Manrope','sans-serif']}}}}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
-</head>
-<body data-page="about">
-  <div class="announcement flex h-8 items-center justify-center gap-1.5 bg-[#222b24] text-[10px] tracking-[.07em] text-[#f8f8f3] dark:bg-[#101612] dark:text-[#edf1e9]">A little something for your everyday <span class="text-[#c1d49b] dark:text-[#c7d9ad]">— free delivery on orders over ₱5,000</span></div>
-  <header class="site-header relative z-10 flex h-[82px] items-center justify-between border-b border-[var(--line)] bg-[var(--paper)] px-[52px] max-[1200px]:px-[30px] max-[760px]:h-[68px] max-[760px]:px-4 sticky top-0 shadow-[0_5px_24px_rgba(35,44,36,.035)] backdrop-blur-[16px] dark:bg-[rgba(23,29,25,.96)] dark:border-[var(--line)]"><a class="brand" href="index.html" aria-label="Avine home">AVINE<span class="brand-dot">.</span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="main-nav min-[761px]:flex items-center gap-[31px] ml-[5%] max-[1200px]:gap-[19px] max-[1200px]:ml-[1%]" aria-label="Main navigation"><a href="index.html">Home</a><a href="shop.html">Shop</a><a class="active text-[var(--ink)] text-[12px] text-[var(--muted)] transition-colors hover:text-[var(--ink)] dark:text-[#edf1e9]" href="about-faq.html">About &amp; FAQ</a><a href="contact.html">Contact</a></nav><div class="header-actions flex items-center gap-[22px] max-[1200px]:gap-3 max-[760px]:gap-2 max-[390px]:gap-[7px]"><form class="search-form flex h-[34px] w-[178px] items-center border-b border-[var(--line)] max-[1200px]:w-[135px] max-[760px]:w-auto max-[760px]:border-0" action="shop.html"><input class="w-full border-0 bg-transparent text-[11px] text-[var(--ink)] outline-none" name="q" placeholder="Search products" aria-label="Search products"><button aria-label="Search"><svg class="h-[17px] w-[17px] fill-none stroke-current" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg></button></form><button class="theme-toggle inline-flex cursor-pointer items-center border-0 bg-transparent p-[5px]" aria-label="Switch color theme"><svg class="h-[17px] w-[17px] fill-none stroke-current sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg><svg class="h-[17px] w-[17px] fill-none stroke-current moon-icon" viewBox="0 0 24 24"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"></path></svg></button><a class="login-link text-[11px]" href="auth.html">Log in</a><a class="cart-link flex items-center gap-[7px] whitespace-nowrap text-[11px]" href="auth.html"><svg class="h-[17px] w-[17px] fill-none stroke-current" viewBox="0 0 24 24"><path d="M3 3h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span>Cart (<b data-cart-count>0</b>)</span></a></div></header>
-  <main><section class="about-intro section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]"><p class="eyebrow"><a href="index.html">HOME</a> <span>/</span> OUR STORY</p><div class="about-intro-grid"><h1 class="font-[var(--display)] text-[clamp(58px,7.4vw,106px)] font-medium leading-[.95] tracking-[-.075em] mb-[22px]">About Avine<span class="brand-dot">.</span></h1><p>A little more intention in the things we use every day. That's where we started, and it's still what guides us.</p></div><div class="about-intro-image"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1800&q=85" alt="A calm, considered living space with thoughtfully chosen objects"><span>THE GOOD STUFF, MADE TO LAST.</span></div></section>
-    <section class="section-wrap story-section mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]"><div class="story-image"><img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1000&q=85" alt="Carefully designed everyday electronics"></div><div class="story-copy"><p class="eyebrow">ROOTED IN THE PHILIPPINES</p><h2>Thoughtful tech.<br>For island life.</h2><p>Avine brings thoughtfully chosen everyday tech closer to home. From busy commutes and long-distance calls to slow Sundays with family, the things we reach for should feel considered and work beautifully.</p><p>We pair good design with straightforward service here in the Philippines: clear peso pricing, delivery to communities across the country, and a local team ready to help.</p><a class="text-link" href="shop.html">Meet your new favorites <span>↗</span></a></div></section>
-    <section class="values-section"><div class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]"><div class="section-heading mb-[43px] flex items-end justify-between max-[760px]:mb-[27px] max-[760px]:gap-[13px] max-[760px]:items-start max-[760px]:flex-col"><div><p class="eyebrow">OUR NORTH STAR</p><h2 class="font-[var(--display)] text-[clamp(30px,3.3vw,43px)] font-medium leading-[1.15] tracking-[-.065em] max-[760px]:text-[29px] max-[390px]:text-[26px]">What we stand for<span class="brand-dot">.</span></h2></div><p>Our values aren't a wall poster.<br>They're the way we do things.</p></div><div class="standards-grid"><article><span>01</span><h3>Thoughtful by design</h3><p>Less, but better. We choose pieces that balance good looks with everyday usefulness.</p></article><article><span>02</span><h3>Built for real life</h3><p>Quality you can feel, made to come along for the long run—not just the unboxing.</p></article><article><span>03</span><h3>People come first</h3><p>Clear answers, kind support, and a real human whenever you need a hand.</p></article></div></div></section>
-    <section class="section-wrap faq-section mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]" id="faq"><div class="faq-heading"><p class="eyebrow">GOOD TO KNOW</p><h2 class="font-[var(--display)] text-[clamp(30px,3.3vw,43px)] font-medium leading-[1.15] tracking-[-.065em] max-[760px]:text-[29px] max-[390px]:text-[26px]">A few common questions<span class="brand-dot">.</span></h2><p>Can't find what you're looking for? <a href="contact.html">Just ask us ↗</a></p></div><div class="faq-list"><details><summary>How long does delivery take?<span>+</span></summary><p>Metro Manila orders usually arrive in 1–3 business days; provincial deliveries typically take 3–7 business days. Delivery times can vary for remote areas and during peak periods. Delivery is free on orders over ₱5,000, and we'll share tracking details when your order is on its way.</p></details><details><summary>What does the warranty cover?<span>+</span></summary><p>Every Avine purchase includes a 2-year limited warranty covering defects in materials and workmanship. If something doesn't feel right, reach out and our team will help make it right.</p></details><details><summary>Can I return or exchange an item?<span>+</span></summary><p>Absolutely. You have 30 days from delivery to request a return or exchange for an unused item in its original packaging. Contact our local support team and we'll guide you through the process. Return conditions and any applicable fees will be confirmed before you send an item back.</p></details><details><summary>How do I get in touch with support?<span>+</span></summary><p>Our support team is here Monday–Friday, 9:00am–6:00pm Philippine Time (PHT). Email us at hello@avine.ph or use the <a href="contact.html">contact form</a>. We aim to respond within one business day.</p></details><details><summary>Where do you deliver?<span>+</span></summary><p>We deliver to serviceable addresses across the Philippines. Availability and delivery times may vary by location. Check your address at checkout or contact our team if you'd like help confirming coverage.</p></details></div></section>
+<html class="scroll-smooth" lang="en-PH">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f4f2eb" name="theme-color"/>
+  <title>
+   Our story &amp; FAQs — AVINE
+  </title>
+  <script>
+   if(localStorage.getItem('avine-theme')==='dark')document.documentElement.classList.add('dark');
+  </script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Manrope','sans-serif']}}}}
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body data-page="about">
+  <div class="announcement flex h-8 items-center justify-center gap-1.5 bg-[#222b24] text-[10px] tracking-[.07em] text-[#f8f8f3] dark:bg-[#101612] dark:text-[#edf1e9]">
+   A little something for your everyday
+   <span class="text-[#c1d49b] dark:text-[#c7d9ad]">
+    — free delivery on orders over ₱5,000
+   </span>
+  </div>
+  <header class="site-header relative z-10 flex h-[82px] items-center justify-between border-b border-[var(--line)] bg-[var(--paper)] px-[52px] max-[1200px]:px-[30px] max-[760px]:h-[68px] max-[760px]:px-4 sticky top-0 shadow-[0_5px_24px_rgba(35,44,36,.035)] backdrop-blur-[16px] dark:bg-[rgba(23,29,25,.96)] dark:border-[var(--line)]">
+   <a aria-label="Avine home" class="brand" href="index.html">
+    AVINE
+    <span class="brand-dot">
+     .
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">
+    <span>
+    </span>
+    <span>
+    </span>
+   </button>
+   <nav aria-label="Main navigation" class="main-nav min-[761px]:flex items-center gap-[31px] ml-[5%] max-[1200px]:gap-[19px] max-[1200px]:ml-[1%]">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="shop.html">
+     Shop
+    </a>
+    <a class="active text-[var(--ink)] text-[12px] text-[var(--muted)] transition-colors hover:text-[var(--ink)] dark:text-[#edf1e9]" href="about-faq.html">
+     About &amp; FAQ
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+   </nav>
+   <div class="header-actions flex items-center gap-[22px] max-[1200px]:gap-3 max-[760px]:gap-2 max-[390px]:gap-[7px]">
+    <form action="shop.html" class="search-form flex h-[34px] w-[178px] items-center border-b border-[var(--line)] max-[1200px]:w-[135px] max-[760px]:w-auto max-[760px]:border-0">
+     <input aria-label="Search products" class="w-full border-0 bg-transparent text-[11px] text-[var(--ink)] outline-none" name="q" placeholder="Search products"/>
+     <button aria-label="Search">
+      <svg class="h-[17px] w-[17px] fill-none stroke-current" viewbox="0 0 24 24">
+       <circle cx="11" cy="11" r="7">
+       </circle>
+       <path d="m16 16 4 4">
+       </path>
+      </svg>
+     </button>
+    </form>
+    <button aria-label="Switch color theme" class="theme-toggle inline-flex cursor-pointer items-center border-0 bg-transparent p-[5px]">
+     <svg class="h-[17px] w-[17px] fill-none stroke-current sun-icon" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" r="4">
+      </circle>
+      <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42">
+      </path>
+     </svg>
+     <svg class="h-[17px] w-[17px] fill-none stroke-current moon-icon" viewbox="0 0 24 24">
+      <path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z">
+      </path>
+     </svg>
+    </button>
+    <a class="login-link text-[11px]" href="auth.html">
+     Log in
+    </a>
+    <a class="cart-link flex items-center gap-[7px] whitespace-nowrap text-[11px]" href="auth.html">
+     <svg class="h-[17px] w-[17px] fill-none stroke-current" viewbox="0 0 24 24">
+      <path d="M3 3h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6">
+      </path>
+      <circle cx="10" cy="20" r="1">
+      </circle>
+      <circle cx="18" cy="20" r="1">
+      </circle>
+     </svg>
+     <span>
+      Cart (
+      <b data-cart-count="">
+       0
+      </b>
+      )
+     </span>
+    </a>
+   </div>
+  </header>
+  <main>
+   <section class="about-intro section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]">
+    <p class="eyebrow">
+     <a href="index.html">
+      HOME
+     </a>
+     <span>
+      /
+     </span>
+     OUR STORY
+    </p>
+    <div class="about-intro-grid">
+     <h1 class="font-[var(--display)] text-[clamp(58px,7.4vw,106px)] font-medium leading-[.95] tracking-[-.075em] mb-[22px]">
+      About Avine
+      <span class="brand-dot">
+       .
+      </span>
+     </h1>
+     <p>
+      A little more intention in the things we use every day. That's where we started, and it's still what guides us.
+     </p>
+    </div>
+    <div class="about-intro-image">
+     <img alt="A calm, considered living space with thoughtfully chosen objects" src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&amp;fit=crop&amp;w=1800&amp;q=85"/>
+     <span>
+      THE GOOD STUFF, MADE TO LAST.
+     </span>
+    </div>
+   </section>
+   <section class="section-wrap story-section mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]">
+    <div class="story-image">
+     <img alt="Carefully designed everyday electronics" src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"/>
+    </div>
+    <div class="story-copy">
+     <p class="eyebrow">
+      ROOTED IN THE PHILIPPINES
+     </p>
+     <h2>
+      Thoughtful tech.
+      <br/>
+      For island life.
+     </h2>
+     <p>
+      Avine brings thoughtfully chosen everyday tech closer to home. From busy commutes and long-distance calls to slow Sundays with family, the things we reach for should feel considered and work beautifully.
+     </p>
+     <p>
+      We pair good design with straightforward service here in the Philippines: clear peso pricing, delivery to communities across the country, and a local team ready to help.
+     </p>
+     <a class="text-link" href="shop.html">
+      Meet your new favorites
+      <span>
+       ↗
+      </span>
+     </a>
+    </div>
+   </section>
+   <section class="values-section">
+    <div class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]">
+     <div class="section-heading mb-[43px] flex items-end justify-between max-[760px]:mb-[27px] max-[760px]:gap-[13px] max-[760px]:items-start max-[760px]:flex-col">
+      <div>
+       <p class="eyebrow">
+        OUR NORTH STAR
+       </p>
+       <h2 class="font-[var(--display)] text-[clamp(30px,3.3vw,43px)] font-medium leading-[1.15] tracking-[-.065em] max-[760px]:text-[29px] max-[390px]:text-[26px]">
+        What we stand for
+        <span class="brand-dot">
+         .
+        </span>
+       </h2>
+      </div>
+      <p>
+       Our values aren't a wall poster.
+       <br/>
+       They're the way we do things.
+      </p>
+     </div>
+     <div class="standards-grid">
+      <article>
+       <span>
+        01
+       </span>
+       <h3>
+        Thoughtful by design
+       </h3>
+       <p>
+        Less, but better. We choose pieces that balance good looks with everyday usefulness.
+       </p>
+      </article>
+      <article>
+       <span>
+        02
+       </span>
+       <h3>
+        Built for real life
+       </h3>
+       <p>
+        Quality you can feel, made to come along for the long run—not just the unboxing.
+       </p>
+      </article>
+      <article>
+       <span>
+        03
+       </span>
+       <h3>
+        People come first
+       </h3>
+       <p>
+        Clear answers, kind support, and a real human whenever you need a hand.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section-wrap faq-section mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]" id="faq">
+    <div class="faq-heading">
+     <p class="eyebrow">
+      GOOD TO KNOW
+     </p>
+     <h2 class="font-[var(--display)] text-[clamp(30px,3.3vw,43px)] font-medium leading-[1.15] tracking-[-.065em] max-[760px]:text-[29px] max-[390px]:text-[26px]">
+      A few common questions
+      <span class="brand-dot">
+       .
+      </span>
+     </h2>
+     <p>
+      Can't find what you're looking for?
+      <a href="contact.html">
+       Just ask us ↗
+      </a>
+     </p>
+    </div>
+    <div class="faq-list">
+     <details>
+      <summary>
+       How long does delivery take?
+       <span>
+        +
+       </span>
+      </summary>
+      <p>
+       Metro Manila orders usually arrive in 1–3 business days; provincial deliveries typically take 3–7 business days. Delivery times can vary for remote areas and during peak periods. Delivery is free on orders over ₱5,000, and we'll share tracking details when your order is on its way.
+      </p>
+     </details>
+     <details>
+      <summary>
+       What does the warranty cover?
+       <span>
+        +
+       </span>
+      </summary>
+      <p>
+       Every Avine purchase includes a 2-year limited warranty covering defects in materials and workmanship. If something doesn't feel right, reach out and our team will help make it right.
+      </p>
+     </details>
+     <details>
+      <summary>
+       Can I return or exchange an item?
+       <span>
+        +
+       </span>
+      </summary>
+      <p>
+       Absolutely. You have 30 days from delivery to request a return or exchange for an unused item in its original packaging. Contact our local support team and we'll guide you through the process. Return conditions and any applicable fees will be confirmed before you send an item back.
+      </p>
+     </details>
+     <details>
+      <summary>
+       How do I get in touch with support?
+       <span>
+        +
+       </span>
+      </summary>
+      <p>
+       Our support team is here Monday–Friday, 9:00am–6:00pm Philippine Time (PHT). Email us at hello@avine.ph or use the
+       <a href="contact.html">
+        contact form
+       </a>
+       . We aim to respond within one business day.
+      </p>
+     </details>
+     <details>
+      <summary>
+       Where do you deliver?
+       <span>
+        +
+       </span>
+      </summary>
+      <p>
+       We deliver to serviceable addresses across the Philippines. Availability and delivery times may vary by location. Check your address at checkout or contact our team if you'd like help confirming coverage.
+      </p>
+     </details>
+    </div>
+   </section>
   </main>
-  <footer class="site-footer"><div class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]"><div class="footer-top grid grid-cols-[1.3fr_.7fr_.8fr_.8fr_1.35fr] gap-[35px] pb-[57px] max-[1200px]:grid-cols-[1.1fr_.7fr_.8fr_.8fr_1.2fr] max-[1200px]:gap-5 max-[760px]:grid-cols-2 max-[760px]:gap-x-[18px] max-[760px]:gap-y-8 max-[760px]:pb-[35px]"><div class="footer-brand"><a class="brand" href="index.html">AVINE<span class="brand-dot">.</span></a><p>Good things, thoughtfully made.<br>Technology for the life you live.</p></div><div class="footer-column"><h4>Explore</h4><a href="shop.html">Shop all</a><a href="shop.html?category=Phones">Phones</a><a href="shop.html?category=Audio">Audio</a><a href="about-faq.html">Our story</a></div><div class="footer-column"><h4>We're here</h4><a href="#faq">FAQs</a><a href="contact.html">Contact us</a><a href="contact.html">Shipping &amp; returns</a><a href="auth.html">My account</a></div><div class="footer-column footer-social"><h4>Follow along</h4><a href="https://www.instagram.com/">Instagram ↗</a><a href="https://www.pinterest.com/">Pinterest ↗</a><a href="https://www.tiktok.com/">TikTok ↗</a></div><div class="footer-newsletter"><h4>A good email, occasionally.</h4><p>New things, thoughtful notes. Never noise.</p><form class="newsletter-form flex"><input class="min-w-0 flex-1 bg-transparent" type="email" placeholder="Your email address" aria-label="Your email address" required><button aria-label="Subscribe">↗</button></form></div></div><div class="footer-bottom flex items-center justify-between border-t border-[#495148] pt-[17px] text-[8px] text-[#aeb5ab] dark:border-[#374138] max-[760px]:grid max-[760px]:grid-cols-[1fr_auto] max-[760px]:gap-3"><span>© Avine. All rights reserved.</span><span>MADE FOR THE MOMENTS IN BETWEEN.</span><a href="about-faq.html">Terms &amp; privacy</a></div></div></footer><div class="toast" role="status" aria-live="polite"></div><script src="script.js"></script>
-</body>
+  <footer class="site-footer">
+   <div class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]">
+    <div class="footer-top grid grid-cols-[1.3fr_.7fr_.8fr_.8fr_1.35fr] gap-[35px] pb-[57px] max-[1200px]:grid-cols-[1.1fr_.7fr_.8fr_.8fr_1.2fr] max-[1200px]:gap-5 max-[760px]:grid-cols-2 max-[760px]:gap-x-[18px] max-[760px]:gap-y-8 max-[760px]:pb-[35px]">
+     <div class="footer-brand">
+      <a class="brand" href="index.html">
+       AVINE
+       <span class="brand-dot">
+        .
+       </span>
+      </a>
+      <p>
+       Good things, thoughtfully made.
+       <br/>
+       Technology for the life you live.
+      </p>
+     </div>
+     <div class="footer-column">
+      <h4>
+       Explore
+      </h4>
+      <a href="shop.html">
+       Shop all
+      </a>
+      <a href="shop.html?category=Phones">
+       Phones
+      </a>
+      <a href="shop.html?category=Audio">
+       Audio
+      </a>
+      <a href="about-faq.html">
+       Our story
+      </a>
+     </div>
+     <div class="footer-column">
+      <h4>
+       We're here
+      </h4>
+      <a href="#faq">
+       FAQs
+      </a>
+      <a href="contact.html">
+       Contact us
+      </a>
+      <a href="contact.html">
+       Shipping &amp; returns
+      </a>
+      <a href="auth.html">
+       My account
+      </a>
+     </div>
+     <div class="footer-column footer-social">
+      <h4>
+       Follow along
+      </h4>
+      <a href="https://www.instagram.com/">
+       Instagram ↗
+      </a>
+      <a href="https://www.pinterest.com/">
+       Pinterest ↗
+      </a>
+      <a href="https://www.tiktok.com/">
+       TikTok ↗
+      </a>
+     </div>
+     <div class="footer-newsletter">
+      <h4>
+       A good email, occasionally.
+      </h4>
+      <p>
+       New things, thoughtful notes. Never noise.
+      </p>
+      <form class="newsletter-form flex">
+       <input aria-label="Your email address" class="min-w-0 flex-1 bg-transparent" placeholder="Your email address" required="" type="email"/>
+       <button aria-label="Subscribe">
+        ↗
+       </button>
+      </form>
+     </div>
+    </div>
+    <div class="footer-bottom flex items-center justify-between border-t border-[#495148] pt-[17px] text-[8px] text-[#aeb5ab] dark:border-[#374138] max-[760px]:grid max-[760px]:grid-cols-[1fr_auto] max-[760px]:gap-3">
+     <span>
+      © Avine. All rights reserved.
+     </span>
+     <span>
+      MADE FOR THE MOMENTS IN BETWEEN.
+     </span>
+     <a href="about-faq.html">
+      Terms &amp; privacy
+     </a>
+    </div>
+   </div>
+  </footer>
+  <div aria-live="polite" class="toast" role="status">
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
 </html>
+
