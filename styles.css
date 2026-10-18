@@ -131,8 +131,11 @@ html.dark body{background-color:#171d19;color:#edf1e9}
 .product-tag{pointer-events:none}
 .quick-modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .quick-modal-actions .button{width:100%;min-width:0}
+.quick-modal-actions .quick-add{border:1px solid var(--line)!important;background:#fff!important;color:#222b24!important}
+.quick-modal-actions .quick-add:hover{border-color:#c9cec2!important;background:#f4f2eb!important;color:#222b24!important}
 .quick-modal-buy{border-color:var(--accent-dark);background:var(--accent-dark);color:#fff}
 .quick-modal-buy:hover{border-color:var(--ink);background:var(--ink)}
+.dark .quick-modal-actions .quick-add{border-color:#48564a!important;background:#fff!important;color:#222b24!important}
 .dark .quick-modal-buy{border-color:#94aa7d;background:#94aa7d;color:#182019}
 @media(max-width:390px){.quick-modal-actions{grid-template-columns:1fr}}
 .dark .hero{background:linear-gradient(132deg,#252e27,#1c251f);color:var(--ink)}
