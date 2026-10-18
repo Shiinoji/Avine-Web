@@ -4,83 +4,113 @@
 const products = [
   {
     id: "phone-poco-f9",
-    name: "Xiaomi POCO F9",
+    name: "Xiaomi POCO F7",
     category: "Phones",
     price: 39990,
-    tag: "Est. price",
     image: "assets/Xiaomi Poco F9.jpg",
     description:
-      "Model: POCO F9 (unverified). Exact chipset, display, camera, battery and storage specs need confirmation.",
+      "Snapdragon 8s Gen 4 processor · 6.83-inch 1.5K AMOLED display with a 120Hz refresh rate · 50MP Sony IMX882 main camera · 6,500mAh battery with 90W HyperCharge · 12GB RAM with 256GB or 512GB storage options.",
   },
   {
     id: "phone-samsung-s24-ultra",
     name: "Samsung Galaxy S24 Ultra",
     category: "Phones",
     price: 84990,
-    tag: "Reference price",
     image: "assets/Samsung Galaxy S24 Ultra.jpg",
     description:
-      "6.8-inch QHD+ 120Hz AMOLED · Snapdragon 8 Gen 3 for Galaxy · 200MP main camera · 5,000mAh battery · 256GB base storage.",
+      "6.8-inch QHD+ Dynamic AMOLED 2X display with a 120Hz refresh rate · Snapdragon 8 Gen 3 for Galaxy · 200MP main camera with a quad-camera system · 5,000mAh battery · Titanium frame with IP68 water and dust resistance.",
   },
   {
     id: "phone-iphone-17-pro-max",
     name: "iPhone 17 Pro Max",
     category: "Phones",
     price: 86990,
-    tag: "From ₱86,990",
     image: "assets/iPhone 17 Pro Max.jpg",
     description:
-      "6.9-inch Super Retina XDR with ProMotion · A19 Pro · 48MP Pro Fusion camera system · up to 8x optical-quality zoom · 256GB base storage.",
+      "6.9-inch Super Retina XDR display with ProMotion · A19 Pro chip · 48MP Pro Fusion camera system · up to 8x optical-quality zoom · Ceramic Shield 2 front cover.",
   },
   {
     id: "phone-iphone-15-pro",
     name: "iPhone 15 Pro",
     category: "Phones",
     price: 69990,
-    tag: "Launch price",
     image: "assets/iPhone 15 Pro.jpg",
     description:
-      "6.1-inch Super Retina XDR with ProMotion · A17 Pro · 48MP Main camera · titanium design · 128GB base storage.",
+      "6.1-inch Super Retina XDR display with ProMotion · A17 Pro chip · 48MP Main camera with a Pro camera system · lightweight titanium design · USB-C connector.",
   },
   {
     id: "gpu-rtx-5090",
     name: "GeForce RTX 5090",
     category: "Graphics Cards",
     price: 189990,
-    tag: "Est. price",
     image: "assets/Arus GeForce RTX 5090.jpg",
     description:
-      "NVIDIA Blackwell · 21,760 CUDA cores · 32GB GDDR7 · 512-bit memory bus. Exact AORUS board model and clock speeds unverified.",
+      "NVIDIA Blackwell architecture · 21,760 CUDA cores · 32GB GDDR7 memory · 512-bit memory interface · DLSS 4 support. AORUS graphics card.",
   },
   {
     id: "gpu-rtx-5060",
-    name: "Gigabyte RTX 5060",
+    name: "Gigabyte GeForce RTX 5060 Ti WINDFORCE OC 16G",
     category: "Graphics Cards",
     price: 159990,
-    tag: "Est. price",
     image: "assets/Gigabyte RTX 5060.jpg",
     description:
-      "NVIDIA Ada Lovelace · 6,144 CUDA cores · 8GB GDDR6 · 128-bit memory bus. Gigabyte WINDFORCE cooling system, RGB Fusion support, exact board model and boost clocks unverified. ",
+      "NVIDIA Blackwell architecture · 4,608 CUDA cores · 16GB GDDR7 memory · 128-bit memory interface · WINDFORCE dual-fan cooling · DLSS 4 support.",
   },
   {
     id: "aula-sc900-pro-mouse",
     name: "AULA SC900 Pro Mouse",
     category: "Accessories",
     price: 699,
-    tag: "Est. price",
     image: "assets/AULA SC900 Pro Mouse.jpg",
     description:
-      "PAW3395 sensor · 8KHz polling rate · Tri-Mode connectivity (Type-C, Bluetooth, 2.4GHz) · 50g ultra-light wireless design. Rechargeable battery, included extra grips and skate. Sensitivity up to 26,000 DPI · 50G acceleration · 650 IPS tracking speed. Exact battery life and firmware details unverified.",
+      "PAW3395 optical sensor · Adjustable sensitivity up to 26,000 DPI · Dual 8,000Hz polling · TTC optical switches · Hot-swappable battery.",
   },
   {
     id: "Benq-Led-Monitor",
-    name: "Benq Gw2490t 23.8 Full Hd Ips Led 100hz Monitor",
-    category: "Accessories",
+    name: "BenQ GW2490T 23.8-inch Full HD IPS 100Hz Monitor",
+    category: "Monitors",
     price: 13000,
-    tag: "Price Drop",
     image: "assets/Benq LED Monitor.jpg",
     description:
-      "Full HD 1920×1080 · IPS LED panel · 100Hz refresh rate · 5ms GTG response time · 178° wide viewing angles. HDMI, DisplayPort, VGA inputs · Built-in stereo speakers · Ergonomic stand with height, tilt, swivel, and rotation adjustments. Ultra-slim 3-sided bezeless design · Flicker-free and low blue light technology. Exact color calibration and firmware details unverified.",
+      "23.8-inch Full HD IPS display · 100Hz refresh rate · BenQ Eye-Care technologies · Ergonomic stand for flexible positioning.",
+  },
+  {
+    id: "monitor-n-vision",
+    name: "N-VISION Monitor",
+    category: "Monitors",
+    price: 5990,
+    image: "assets/N-VISION Monitor.jpg",
+    description:
+      "N-VISION desktop monitor with a slim, widescreen design for everyday work, study, and entertainment.",
+  },
+  {
+    id: "laptop-lenovo-loq",
+    name: "Lenovo LOQ 15IRX9 (83DV00E8PH)",
+    category: "Laptops",
+    price: 65995,
+    tag: "₱65,995",
+    image: "assets/Lenovo LOQ.jpg",
+    description:
+      "LOQ 15IRX9 (83DV00E8PH) · Intel Core i5 processor · NVIDIA GeForce RTX 4050 graphics · Luna Grey. Listed at ₱65,995.",
+  },
+  {
+    id: "laptop-hp-victus-15",
+    name: "HP Victus Gaming Laptop 15-fb3269AX",
+    category: "Laptops",
+    price: 64999,
+    tag: "₱64,999",
+    image: "assets/HP VICTUS 15.jpg",
+    description:
+      "15-fb3269AX · AMD Ryzen 7 7445HS processor · 8GB DDR5-5600 memory · 512GB PCIe Gen4 NVMe SSD · NVIDIA GeForce RTX 3050 Laptop GPU with 6GB GDDR6 · 15.6-inch FHD 144Hz IPS display · Windows 11 Home Single Language · Backlit keyboard and HP Wide Vision 720p camera. Includes an HP slingbag and Microsoft Office Home and Student. Seven-day replacement for factory defects and a two-year manufacturer warranty. ₱64,999, reduced from ₱74,999.",
+  },
+  {
+    id: "keyboard-ajazz-ak860",
+    name: "Ajazz AK860 Mechanical Keyboard",
+    category: "Accessories",
+    price: 3290,
+    image: "assets/Ajazz AK860 Mechanical Keyboard.jpg",
+    description:
+      "Ajazz AK860 mechanical keyboard with a compact key layout and rotary control, shown in a clean gray-and-white finish.",
   },
 ];
 
@@ -574,7 +604,9 @@ function initShop() {
   const initialCategory = params.get("category");
   if (
     initialCategory &&
-    ["Phones", "Graphics Cards"].includes(initialCategory)
+    ["Accessories", "Graphics Cards", "Laptops", "Monitors", "Phones"].includes(
+      initialCategory,
+    )
   ) {
     shopState.category = [initialCategory];
     const checkbox = document.querySelector(
