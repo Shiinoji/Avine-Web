@@ -72,6 +72,16 @@ const products = [
     description:
       "PAW3395 sensor · 8KHz polling rate · Tri-Mode connectivity (Type-C, Bluetooth, 2.4GHz) · 50g ultra-light wireless design. Rechargeable battery, included extra grips and skate. Sensitivity up to 26,000 DPI · 50G acceleration · 650 IPS tracking speed. Exact battery life and firmware details unverified.",
   },
+  {
+    id: "Benq-Led-Monitor",
+    name: "Benq Gw2490t 23.8 Full Hd Ips Led 100hz Monitor",
+    category: "Accessories",
+    price: 13000,
+    tag: "Price Drop",
+    image: "assets/Benq LED Monitor.jpg",
+    description:
+      "Full HD 1920×1080 · IPS LED panel · 100Hz refresh rate · 5ms GTG response time · 178° wide viewing angles. HDMI, DisplayPort, VGA inputs · Built-in stereo speakers · Ergonomic stand with height, tilt, swivel, and rotation adjustments. Ultra-slim 3-sided bezeless design · Flicker-free and low blue light technology. Exact color calibration and firmware details unverified.",
+  },
 ];
 
 // Uses the Philippine peso format consistently across the storefront.

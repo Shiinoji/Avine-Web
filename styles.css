@@ -267,6 +267,9 @@ img {
 .category-pc .category-img {
   background-image: url("assets/Arus GeForce RTX 5090.jpg");
 }
+.category-accessories .category-img {
+  background-image: url("assets/accessories.jpg");
+}
 .category-label {
   display: flex;
   justify-content: space-between;
