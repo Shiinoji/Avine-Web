@@ -52,6 +52,16 @@ const products = [
     description:
       "NVIDIA Blackwell · 21,760 CUDA cores · 32GB GDDR7 · 512-bit memory bus. Exact AORUS board model and clock speeds unverified.",
   },
+  {
+    id: "gpu-rtx-5060",
+    name: "Gigabyte RTX 5060",
+    category: "Graphics Cards",
+    price: 159990,
+    tag: "Est. price",
+    image: "assets/Gigabyte RTX 5060.jpg",
+    description:
+      "NVIDIA Ada Lovelace · 6,144 CUDA cores · 8GB GDDR6 · 128-bit memory bus. Gigabyte WINDFORCE cooling system, RGB Fusion support, exact board model and boost clocks unverified. ",
+  },
 ];
 
 // Uses the Philippine peso format consistently across the storefront.
