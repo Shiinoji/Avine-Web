@@ -107,6 +107,10 @@ function updateCartCount() {
 }
 
 function addToCart(productId, quantity = 1) {
+  if (!isLoggedIn()) {
+    requireLogin();
+    return;
+  }
   const product = products.find((item) => item.id === productId);
   if (!product || !Number.isInteger(quantity) || quantity < 1) {
     showToast("That product or quantity isn't available.");
