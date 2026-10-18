@@ -2,20 +2,11 @@
 // This file creates the product catalog, cart behavior, and page-level UI flows for the static storefront.
 
 const products = [
-  {id:"phone-01",name:"The One Phone",category:"Phones",price:38990,tag:"Bestseller",image:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=850&q=85",description:"A beautifully balanced everyday phone with a vivid display, thoughtful camera, and all-day battery. Made to feel just right in your hand."},
-  {id:"phone-02",name:"One Phone Mini",category:"Phones",price:29990,tag:"Just landed",image:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=850&q=85",description:"Everything you love about a great phone, in a comfortably compact size. Clear, capable, and ready for wherever the day goes."},
-  {id:"phone-03",name:"One Phone Pro",category:"Phones",price:49990,tag:"",image:"https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=850&q=85",description:"A little extra of everything. Pro-level photography, a brilliant display, and thoughtful performance for the moments that matter."},
-  {id:"phone-04",name:"Everyday Case",category:"Phones",price:1490,tag:"",image:"https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=850&q=85",description:"A soft-touch, durable case with a reassuring grip and a clean silhouette. Everyday protection without the extra bulk."},
-  {id:"audio-01",name:"Studio Headphones",category:"Audio",price:13990,tag:"Bestseller",image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=850&q=85",description:"Your own quiet corner, wherever you are. Enjoy rich, balanced sound, soft cushioning, and a comfortable fit from morning to evening."},
-  {id:"audio-02",name:"Little Speaker",category:"Audio",price:6990,tag:"",image:"https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=850&q=85",description:"Small enough to bring along, full enough to fill a room. A portable speaker with warm sound and up to 14 hours of listening."},
-  {id:"audio-03",name:"Everyday Earbuds",category:"Audio",price:8990,tag:"Just landed",image:"https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=850&q=85",description:"Easy-listening earbuds with clear sound, a secure fit, and a pocket-sized case that keeps your day moving."},
-  {id:"audio-04",name:"Quiet Buds",category:"Audio",price:10990,tag:"",image:"https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=850&q=85",description:"A little space when you need it. Adaptive noise cancelling and naturally detailed audio in a comfortable, lightweight design."},
-  {id:"wear-01",name:"Daylight Watch",category:"Wearables",price:18490,tag:"Bestseller",image:"https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=850&q=85",description:"A thoughtful companion for your day, with gentle wellness insights, a bright always-on display, and a battery that lasts."},
-  {id:"wear-02",name:"Daylight Band",category:"Wearables",price:2490,tag:"",image:"https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?auto=format&fit=crop&w=850&q=85",description:"A comfortable, easy-to-change band in a soft, durable finish. A small detail that makes your watch feel like yours."},
-  {id:"wear-03",name:"Move Tracker",category:"Wearables",price:6490,tag:"",image:"https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?auto=format&fit=crop&w=850&q=85",description:"A simple, lightweight way to keep a kind eye on movement, rest, and the rhythms of your everyday."},
-  {id:"access-01",name:"Pocket Charger",category:"Accessories",price:2990,tag:"",image:"https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=850&q=85",description:"A slim, dependable power boost that slips into any bag. Thoughtful charging, right when you need it."},
-  {id:"access-02",name:"Wireless Pad",category:"Accessories",price:3990,tag:"",image:"https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=850&q=85",description:"A tidy place to power up. Set your phone down, let it charge, and get on with your day."},
-  {id:"access-03",name:"Carry-All Pouch",category:"Accessories",price:1790,tag:"Just landed",image:"https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=850&q=85",description:"A soft, sturdy home for your everyday essentials. Room for cables, earbuds, and all the little things you reach for."}
+  {id:"phone-poco-f9",name:"Xiaomi POCO F9",category:"Phones",price:39990,tag:"Est. price",image:"assets/Xiaomi Poco F9.jpg",description:"Model: POCO F9 (unverified). Exact chipset, display, camera, battery and storage specs need confirmation."},
+  {id:"phone-samsung-s24-ultra",name:"Samsung Galaxy S24 Ultra",category:"Phones",price:84990,tag:"Reference price",image:"assets/Samsung Galaxy S24 Ultra.jpg",description:"6.8-inch QHD+ 120Hz AMOLED · Snapdragon 8 Gen 3 for Galaxy · 200MP main camera · 5,000mAh battery · 256GB base storage."},
+  {id:"phone-iphone-17-pro-max",name:"iPhone 17 Pro Max",category:"Phones",price:86990,tag:"From ₱86,990",image:"assets/iPhone 17 Pro Max.jpg",description:"6.9-inch Super Retina XDR with ProMotion · A19 Pro · 48MP Pro Fusion camera system · up to 8x optical-quality zoom · 256GB base storage."},
+  {id:"phone-iphone-15-pro",name:"iPhone 15 Pro",category:"Phones",price:69990,tag:"Launch price",image:"assets/iPhone 15 Pro.jpg",description:"6.1-inch Super Retina XDR with ProMotion · A17 Pro · 48MP Main camera · titanium design · 128GB base storage."},
+  {id:"gpu-rtx-5090",name:"GeForce RTX 5090",category:"Graphics Cards",price:189990,tag:"Est. price",image:"assets/Arus GeForce RTX 5090.jpg",description:"NVIDIA Blackwell · 21,760 CUDA cores · 32GB GDDR7 · 512-bit memory bus. Exact AORUS board model and clock speeds unverified."}
 ];
 
 // Uses the Philippine peso format consistently across the storefront.
@@ -140,13 +131,13 @@ function saveCart(cart) {
   return true;
 }
 
-function buyNow(productId) {
+function buyNow(productId, quantity = 1) {
   const product = products.find((item) => item.id === productId);
-  if (!product) {
+  if (!product || !Number.isInteger(quantity) || quantity < 1 || quantity > 99) {
     showToast("That product is no longer available.");
     return;
   }
-  const checkoutUrl = `checkout.html?mode=buy-now&productId=${encodeURIComponent(product.id)}`;
+  const checkoutUrl = `checkout.html?mode=buy-now&productId=${encodeURIComponent(product.id)}&quantity=${quantity}`;
   if (!isLoggedIn()) {
     requireLogin(checkoutUrl);
     return;
@@ -347,12 +338,13 @@ function initCart() {
 
 // Generates each product card markup from the storefront data array.
 function productCard(product) {
-  const description = product.description.length > 78 ? `${product.description.slice(0, 78).trim()}…` : product.description;
+  const description = product.description.length > 105 ? `${product.description.slice(0, 105).trim()}…` : product.description;
   return `<article class="product-card min-w-0" data-product-id="${product.id}">
     <div class="product-image-wrap">
-      <img class="product-image" src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=850&q=85';">
+      <button class="product-image-trigger" type="button" data-product-image="${product.id}" aria-label="View ${product.name} details">
+        <img class="product-image" src="${product.image}" alt="${product.name}" loading="lazy">
+      </button>
       ${product.tag ? `<span class="product-tag">${product.tag}</span>` : ""}
-      <button class="quick-view-button" data-quick-view="${product.id}">Quick view ↗</button>
     </div>
     <div class="product-info flex items-start justify-between gap-2 pt-[13px]">
       <div class="min-w-0 flex-1">
@@ -370,7 +362,7 @@ function productCard(product) {
 }
 
 // Tracks the current state of the product catalog filters and pagination.
-const shopState = {category: [], min: 0, max: 60000, query: "", sort: "featured", page: 1, perPage: 6};
+const shopState = {category: [], min: 0, max: 250000, query: "", sort: "featured", page: 1, perPage: 6};
 
 // Filters the master catalog based on search, price, category, and sort options.
 function getFilteredProducts() {
@@ -421,7 +413,7 @@ function initShop() {
   const params = new URLSearchParams(window.location.search);
   shopState.query = params.get("q") || "";
   const initialCategory = params.get("category");
-  if (initialCategory && ["Phones", "Audio", "Wearables", "Accessories"].includes(initialCategory)) {
+  if (initialCategory && ["Phones", "Graphics Cards"].includes(initialCategory)) {
     shopState.category = [initialCategory];
     const checkbox = document.querySelector(`input[name="category"][value="${initialCategory}"]`);
     if (checkbox) checkbox.checked = true;
@@ -445,7 +437,7 @@ function initShop() {
     shopState.min = Math.max(0, Number(minInput.value) || 0);
     shopState.max = Math.max(shopState.min, Number(maxInput.value) || 0);
     maxInput.value = String(shopState.max);
-    range.value = String(Math.min(60000, shopState.max));
+    range.value = String(Math.min(250000, shopState.max));
     shopState.page = 1;
     refresh();
   };
@@ -465,14 +457,14 @@ function initShop() {
   document.querySelector(".clear-filters").addEventListener("click", () => {
     shopState.category = [];
     shopState.min = 0;
-    shopState.max = 60000;
+    shopState.max = 250000;
     shopState.query = "";
     shopState.sort = "featured";
     shopState.page = 1;
     document.querySelectorAll('input[name="category"]').forEach((checkbox) => { checkbox.checked = false; });
     minInput.value = "0";
-    maxInput.value = "60000";
-    range.value = "60000";
+    maxInput.value = "250000";
+    range.value = "250000";
     document.querySelector("[data-sort]").value = "featured";
     const input = document.querySelector('.search-form input[name="q"]');
     if (input) input.value = "";
@@ -495,14 +487,14 @@ function initShop() {
 
 // Home page hero slides used by the rotating banner on the landing page.
 const slides = [
-  {title:"Latest<br><span>Gadget.</span>",description:"Thoughtful technology. Beautifully made. Meet the little things that make a big difference.",image:"https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=1500&q=90"},
-  {title:"Sound<br><span>Mindful.</span>",description:"Find your own rhythm with rich, considered sound for wherever the day takes you.",image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1500&q=90"},
-  {title:"Move<br><span>Your Way.</span>",description:"A thoughtful little companion for all your everyday wins, big and small.",image:"https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1500&q=90"}
+  {title:"Latest<br><span>Gadget.</span>",description:"Thoughtful technology. Beautifully made. Meet the little things that make a big difference.",image:"assets/iPhone 17 Pro Max.jpg"},
+  {title:"Made to<br><span>Move.</span>",description:"Find your everyday phone among our thoughtfully selected devices.",image:"assets/Xiaomi Poco F9.jpg"},
+  {title:"Power<br><span>Play.</span>",description:"Bring your next build to life with powerful graphics hardware.",image:"assets/Arus GeForce RTX 5090.jpg"}
 ];
 // Builds the featured products block and configures the hero carousel behavior.
 function initHome() {
   const featured = document.querySelector('[data-products="featured"]');
-  if (featured) featured.innerHTML = [products[0], products[4], products[8], products[11]].map(productCard).join("");
+  if (featured) featured.innerHTML = products.slice(0, 4).map(productCard).join("");
   const title = document.querySelector("#hero-title");
   if (!title) return;
   let current = 0;
@@ -537,6 +529,21 @@ function initGlobalInteractions() {
   });
   const modal = document.querySelector("#quick-view-modal");
   let selectedProduct = null;
+  if (modal && !modal.querySelector("[data-modal-buy-now]")) {
+    const actions = document.createElement("div");
+    actions.className = "quick-modal-actions";
+    const addButton = modal.querySelector(".quick-add");
+    const exploreLink = modal.querySelector(".quick-shop-link");
+    addButton.parentNode.insertBefore(actions, addButton);
+    actions.append(addButton);
+    const buyButton = document.createElement("button");
+    buyButton.type = "button";
+    buyButton.className = "button quick-modal-buy";
+    buyButton.dataset.modalBuyNow = "";
+    buyButton.textContent = "Buy now";
+    actions.append(buyButton);
+    if (exploreLink) exploreLink.remove();
+  }
   const closeModal = () => {
     if (!modal) return;
     modal.classList.remove("open");
@@ -544,9 +551,9 @@ function initGlobalInteractions() {
     document.body.classList.remove("modal-open");
   };
   document.addEventListener("click", (event) => {
-    const quick = event.target.closest("[data-quick-view]");
-    if (quick && modal) {
-      selectedProduct = products.find((product) => product.id === quick.dataset.quickView);
+    const imageTrigger = event.target.closest("[data-product-image]");
+    if (imageTrigger && modal) {
+      selectedProduct = products.find((product) => product.id === imageTrigger.dataset.productImage);
       if (!selectedProduct) return;
       modal.querySelector(".quick-image").style.backgroundImage = `url("${selectedProduct.image}")`;
       modal.querySelector("#quick-title").textContent = selectedProduct.name;
@@ -572,6 +579,9 @@ function initGlobalInteractions() {
     if (event.target.closest(".quick-add") && selectedProduct) {
       addToCart(selectedProduct.id, Number(modal.querySelector("[data-quantity-value]").textContent));
       if (isLoggedIn()) closeModal();
+    }
+    if (event.target.closest("[data-modal-buy-now]") && selectedProduct) {
+      buyNow(selectedProduct.id, Number(modal.querySelector("[data-quantity-value]").textContent));
     }
   });
   document.addEventListener("keydown", (event) => {
@@ -759,11 +769,12 @@ function initCheckout() {
   let items;
   if (isBuyNow) {
     const product = products.find((item) => item.id === params.get("productId"));
-    if (!product) {
+    const quantity = Number(params.get("quantity") || 1);
+    if (!product || !Number.isInteger(quantity) || quantity < 1 || quantity > 99) {
       window.location.href = "shop.html";
       return;
     }
-    items = [{...product, quantity: 1}];
+    items = [{...product, quantity}];
   } else {
     items = getCart();
     if (!items.length) {

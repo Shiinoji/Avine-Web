@@ -235,23 +235,15 @@
           </a>
         </div>
         <div
-          class="category-grid grid grid-cols-4 gap-[17px] max-[760px]:grid-cols-2 max-[760px]:gap-x-3 max-[760px]:gap-y-[9px]"
+          class="category-grid grid grid-cols-2 gap-[17px] max-[760px]:grid-cols-2 max-[760px]:gap-x-3 max-[760px]:gap-y-[9px]"
         >
           <a class="category-card block category-phone" href="shop.html?category=Phones">
             <div class="category-img"></div>
             <div class="category-label"><span>01 / Phones</span><b>↗</b></div>
           </a>
-          <a class="category-card block category-audio" href="shop.html?category=Audio">
+          <a class="category-card block category-pc" href="shop.html?category=Graphics%20Cards">
             <div class="category-img"></div>
-            <div class="category-label"><span>02 / Audio</span><b>↗</b></div>
-          </a>
-          <a class="category-card block category-wearables" href="shop.html?category=Wearables">
-            <div class="category-img"></div>
-            <div class="category-label"><span>03 / Wearables</span><b>↗</b></div>
-          </a>
-          <a class="category-card block category-accessories" href="shop.html?category=Accessories">
-            <div class="category-img"></div>
-            <div class="category-label"><span>04 / Accessories</span><b>↗</b></div>
+            <div class="category-label"><span>02 / Graphics Cards</span><b>↗</b></div>
           </a>
         </div>
       </section>
@@ -351,7 +343,7 @@
             <h4>Explore</h4>
             <a href="shop.html">Shop all</a>
             <a href="shop.html?category=Phones">Phones</a>
-            <a href="shop.html?category=Audio">Audio</a>
+            <a href="shop.html?category=Graphics%20Cards">Graphics Cards</a>
             <a href="about-faq.html">Our story</a>
           </div>
           <div class="footer-column">
@@ -414,16 +406,26 @@
             <span data-quantity-value>1</span>
             <button data-quantity="plus" aria-label="Increase quantity">+</button>
           </div>
-          <button
-            class="button button-dark quick-add inline-flex min-h-[47px]
-              cursor-pointer items-center justify-center gap-[30px]
-              border border-transparent bg-[#222b24] px-5 text-[11px]
-              font-semibold text-white transition duration-200
-              hover:-translate-y-0.5 hover:bg-[#39483b]"
-          >
-            Add to cart <span>↗</span>
-          </button>
-          <a class="text-link quick-shop-link" href="shop.html">Explore the collection</a>
+          <div class="quick-modal-actions">
+            <button
+              class="button button-dark quick-add inline-flex min-h-[47px]
+                cursor-pointer items-center justify-center gap-2
+                border border-transparent bg-[#222b24] px-3 text-[11px]
+                font-semibold text-white transition duration-200
+                hover:-translate-y-0.5 hover:bg-[#39483b]"
+            >
+              Add to cart
+            </button>
+            <button
+              class="button quick-modal-buy inline-flex min-h-[47px]
+                cursor-pointer items-center justify-center border px-3
+                text-[11px] font-semibold transition duration-200
+                hover:-translate-y-0.5"
+              data-modal-buy-now
+            >
+              Buy now
+            </button>
+          </div>
         </div>
       </section>
     </div>
