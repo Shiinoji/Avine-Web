@@ -1,199 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="scroll-smooth" lang="en-PH">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="#f4f2eb" name="theme-color"/>
-  <title>
-   Checkout
-  </title>
-  <script>
-   if (localStorage.getItem('avine-theme') === 'dark') {
-        document.documentElement.classList.add('dark');
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="#f4f2eb" name="theme-color" />
+    <title>Checkout</title>
+    <script>
+      if (localStorage.getItem("avine-theme") === "dark") {
+        document.documentElement.classList.add("dark");
       }
-  </script>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <script>
-   tailwind.config = {
-        darkMode: 'class',
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Manrope', 'sans-serif'],
+              sans: ["Inter", "sans-serif"],
+              display: ["Manrope", "sans-serif"],
             },
           },
         },
       };
-  </script>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-  <link href="styles.css" rel="stylesheet"/>
- </head>
- <body data-page="checkout">
-  <div class="announcement">
-   A little something for your everyday
-   <span>
-    — free delivery on orders over ₱5,000
-   </span>
-  </div>
-  <header class="site-header commerce-header">
-   <a class="brand" href="index.html">
-    AVINE
-    <span class="brand-dot">
-     .
-    </span>
-   </a>
-   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">
-    <span>
-    </span>
-    <span>
-    </span>
-   </button>
-   <nav aria-label="Main navigation" class="main-nav">
-    <a href="index.html">
-     Home
-    </a>
-    <a href="shop.html">
-     Shop
-    </a>
-    <a href="about-faq.html">
-     About &amp; FAQ
-    </a>
-    <a href="contact.html">
-     Contact
-    </a>
-   </nav>
-   <div class="header-actions">
-    <button aria-label="Switch color theme" class="theme-toggle">
-     <svg class="sun-icon" viewbox="0 0 24 24">
-      <circle cx="12" cy="12" r="4">
-      </circle>
-      <path d="M12 2v2m0 16v2M2 12h2m16 0h2">
-      </path>
-     </svg>
-     <svg class="moon-icon" viewbox="0 0 24 24">
-      <path d="M20.2 15.1A8.5 8.5 0 1 1 8.9 3.8 8.5 8.5 0 0 0 20.2 15.1Z">
-      </path>
-     </svg>
-    </button>
-    <a class="login-link" href="auth.html">
-     Log in
-    </a>
-    <a class="signup-link" href="auth.html?mode=signup">
-     Sign up
-    </a>
-    <a class="cart-link" href="cart.html">
-     Cart (
-     <b data-cart-count="">
-      0
-     </b>
-     )
-    </a>
-   </div>
-  </header>
-  <main class="commerce-page section-wrap">
-   <p class="eyebrow">
-    <a href="shop.html">
-     SHOP
-    </a>
-    <span>
-     /
-    </span>
-    CHECKOUT
-   </p>
-   <div class="commerce-heading">
-    <div>
-     <h1>
-      Checkout
-      <span class="brand-dot">
-       .
-      </span>
-     </h1>
-     <p>
-      A demo checkout—no payment details are collected.
-     </p>
+    </script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body data-page="checkout">
+    <div class="announcement">
+      A little something for your everyday
+      <span> — free delivery on orders over ₱5,000 </span>
     </div>
-   </div>
-   <section class="checkout-layout" data-checkout-panel="">
-    <form class="profile-form checkout-form" data-checkout-form="">
-     <p class="eyebrow">
-      DELIVERY DETAILS
-     </p>
-     <label>
-      Full name
-      <input autocomplete="name" name="name" required="" type="text"/>
-     </label>
-     <label>
-      Email address
-      <input autocomplete="email" name="email" required="" type="email"/>
-     </label>
-     <label>
-      Street address
-      <input autocomplete="street-address" name="address" required="" type="text"/>
-     </label>
-     <div class="checkout-fields-row">
-      <label>
-       City
-       <input autocomplete="address-level2" name="city" required="" type="text"/>
-      </label>
-      <label>
-       Postal code
-       <input autocomplete="postal-code" name="postalCode" required="" type="text"/>
-      </label>
-     </div>
-     <button class="button button-dark" type="submit">
-      Confirm demo order ↗
-     </button>
-    </form>
-    <aside class="cart-summary">
-     <p class="eyebrow">
-      YOUR ORDER
-     </p>
-     <div data-checkout-summary="">
-     </div>
-    </aside>
-   </section>
-   <section aria-live="polite" class="order-success account-card" data-order-success="" hidden="">
-    <p class="eyebrow">
-     ALL SET
-    </p>
-    <h2>
-     Your order is confirmed
-     <span class="brand-dot">
-      .
-     </span>
-    </h2>
-    <p>
-     Order reference:
-     <strong data-order-number="">
-     </strong>
-    </p>
-    <p>
-     This is a demonstration order. No payment was taken.
-    </p>
-    <a class="button button-dark" href="account.html">
-     View your account ↗
-    </a>
-   </section>
-  </main>
-  <footer class="site-footer">
-   <div class="section-wrap">
-    <a class="brand" href="index.html">
-     AVINE
-     <span class="brand-dot">
-      .
-     </span>
-    </a>
-    <p>
-     Good things, thoughtfully made.
-    </p>
-   </div>
-  </footer>
-  <script src="script.js">
-  </script>
- </body>
+    <header class="site-header commerce-header">
+      <a class="brand" href="index.html">
+        AVINE
+        <span class="brand-dot"> . </span>
+      </a>
+      <button
+        aria-expanded="false"
+        aria-label="Open navigation"
+        class="menu-toggle"
+      >
+        <span> </span>
+        <span> </span>
+      </button>
+      <nav aria-label="Main navigation" class="main-nav">
+        <a href="index.html"> Home </a>
+        <a href="shop.html"> Shop </a>
+        <a href="about-faq.html"> About &amp; FAQ </a>
+        <a href="contact.html"> Contact </a>
+      </nav>
+      <div class="header-actions">
+        <button aria-label="Switch color theme" class="theme-toggle">
+          <svg class="sun-icon" viewbox="0 0 24 24">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2"></path>
+          </svg>
+          <svg class="moon-icon" viewbox="0 0 24 24">
+            <path
+              d="M20.2 15.1A8.5 8.5 0 1 1 8.9 3.8 8.5 8.5 0 0 0 20.2 15.1Z"
+            ></path>
+          </svg>
+        </button>
+        <a class="login-link" href="auth.html"> Log in </a>
+        <a class="signup-link" href="auth.html?mode=signup"> Sign up </a>
+        <a class="cart-link" href="cart.html">
+          Cart (
+          <b data-cart-count=""> 0 </b>
+          )
+        </a>
+      </div>
+    </header>
+    <main class="commerce-page section-wrap">
+      <p class="eyebrow">
+        <a href="shop.html"> SHOP </a>
+        <span> / </span>
+        CHECKOUT
+      </p>
+      <div class="commerce-heading">
+        <div>
+          <h1>
+            Checkout
+            <span class="brand-dot"> . </span>
+          </h1>
+          <p>A demo checkout—no payment details are collected.</p>
+        </div>
+      </div>
+      <section class="checkout-layout" data-checkout-panel="">
+        <form class="profile-form checkout-form" data-checkout-form="">
+          <p class="eyebrow">DELIVERY DETAILS</p>
+          <label>
+            Full name
+            <input autocomplete="name" name="name" required="" type="text" />
+          </label>
+          <label>
+            Email address
+            <input autocomplete="email" name="email" required="" type="email" />
+          </label>
+          <label>
+            Street address
+            <input
+              autocomplete="street-address"
+              name="address"
+              required=""
+              type="text"
+            />
+          </label>
+          <div class="checkout-fields-row">
+            <label>
+              City
+              <input
+                autocomplete="address-level2"
+                name="city"
+                required=""
+                type="text"
+              />
+            </label>
+            <label>
+              Postal code
+              <input
+                autocomplete="postal-code"
+                name="postalCode"
+                required=""
+                type="text"
+              />
+            </label>
+          </div>
+          <button class="button button-dark" type="submit">
+            Confirm demo order ↗
+          </button>
+        </form>
+        <aside class="cart-summary">
+          <p class="eyebrow">YOUR ORDER</p>
+          <div data-checkout-summary=""></div>
+        </aside>
+      </section>
+      <section
+        aria-live="polite"
+        class="order-success account-card"
+        data-order-success=""
+        hidden=""
+      >
+        <p class="eyebrow">ALL SET</p>
+        <h2>
+          Your order is confirmed
+          <span class="brand-dot"> . </span>
+        </h2>
+        <p>
+          Order reference:
+          <strong data-order-number=""> </strong>
+        </p>
+        <p>This is a demonstration order. No payment was taken.</p>
+        <a class="button button-dark" href="account.html">
+          View your account ↗
+        </a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="section-wrap">
+        <a class="brand" href="index.html">
+          AVINE
+          <span class="brand-dot"> . </span>
+        </a>
+        <p>Good things, thoughtfully made.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
-
