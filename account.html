@@ -1,97 +1,268 @@
 <!DOCTYPE html>
-<html lang="en-PH" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f4f2eb">
-  <title>Account</title>
-  <script>if(localStorage.getItem('avine-theme')==='dark')document.documentElement.classList.add('dark');</script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Manrope','sans-serif']}}}}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body data-page="account">
-  <div class="announcement">A little something for your everyday <span>— free delivery on orders over ₱5,000</span></div>
+<html class="scroll-smooth" lang="en-PH">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f4f2eb" name="theme-color"/>
+  <title>
+   Account
+  </title>
+  <script>
+   if(localStorage.getItem('avine-theme')==='dark')document.documentElement.classList.add('dark');
+  </script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Manrope','sans-serif']}}}}
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body data-page="account">
+  <div class="announcement">
+   A little something for your everyday
+   <span>
+    — free delivery on orders over ₱5,000
+   </span>
+  </div>
   <header class="site-header commerce-header">
-    <a class="brand" href="index.html">AVINE<span class="brand-dot">.</span></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about-faq.html">About &amp; FAQ</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="header-actions">
-      <button class="theme-toggle" aria-label="Switch color theme"><svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2"></path></svg><svg class="moon-icon" viewBox="0 0 24 24"><path d="M20.2 15.1A8.5 8.5 0 1 1 8.9 3.8 8.5 8.5 0 0 0 20.2 15.1Z"></path></svg></button>
-      <a class="login-link" href="auth.html">Log in</a><a class="signup-link" href="auth.html?mode=signup">Sign up</a>
-      <a class="cart-link" href="cart.html">Cart (<b data-cart-count>0</b>)</a>
-    </div>
+   <a class="brand" href="index.html">
+    AVINE
+    <span class="brand-dot">
+     .
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">
+    <span>
+    </span>
+    <span>
+    </span>
+   </button>
+   <nav aria-label="Main navigation" class="main-nav">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="shop.html">
+     Shop
+    </a>
+    <a href="about-faq.html">
+     About &amp; FAQ
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+   </nav>
+   <div class="header-actions">
+    <button aria-label="Switch color theme" class="theme-toggle">
+     <svg class="sun-icon" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" r="4">
+      </circle>
+      <path d="M12 2v2m0 16v2M2 12h2m16 0h2">
+      </path>
+     </svg>
+     <svg class="moon-icon" viewbox="0 0 24 24">
+      <path d="M20.2 15.1A8.5 8.5 0 1 1 8.9 3.8 8.5 8.5 0 0 0 20.2 15.1Z">
+      </path>
+     </svg>
+    </button>
+    <a class="login-link" href="auth.html">
+     Log in
+    </a>
+    <a class="signup-link" href="auth.html?mode=signup">
+     Sign up
+    </a>
+    <a class="cart-link" href="cart.html">
+     Cart (
+     <b data-cart-count="">
+      0
+     </b>
+     )
+    </a>
+   </div>
   </header>
   <main class="commerce-page section-wrap">
-    <p class="eyebrow"><a href="index.html">HOME</a> <span>/</span> YOUR ACCOUNT</p>
-    <div class="commerce-heading"><div><h1>Your account<span class="brand-dot">.</span></h1><p>Keep your Avine details up to date.</p></div><button class="button button-outline" data-logout>Log out</button></div>
-    <div class="account-grid">
-      <section class="account-card">
-        <p class="eyebrow">ACCOUNT DETAILS</p>
-        <form class="profile-form" data-profile-form>
-          <label>First name<input type="text" name="firstName" autocomplete="given-name" required></label>
-          <label>Last name<input type="text" name="lastName" autocomplete="family-name" required></label>
-          <label>Email address<input type="email" name="email" readonly aria-describedby="email-note"></label>
-          <small id="email-note">Email address is used to identify your account.</small>
-          <button class="button button-dark" type="submit">Save changes ↗</button>
-        </form>
-      </section>
-      <aside class="account-card account-overview">
-        <p class="eyebrow">YOUR AVINE</p>
-        <a href="cart.html"><strong data-profile-cart-count>0</strong><span>items in your bag</span> ↗</a>
-        <a href="#orders"><strong>Order history</strong><span>See your confirmed purchases</span> ↗</a>
-      </aside>
+   <p class="eyebrow">
+    <a href="index.html">
+     HOME
+    </a>
+    <span>
+     /
+    </span>
+    YOUR ACCOUNT
+   </p>
+   <div class="commerce-heading">
+    <div>
+     <h1>
+      Your account
+      <span class="brand-dot">
+       .
+      </span>
+     </h1>
+     <p>
+      Keep your Avine details up to date.
+     </p>
     </div>
-    <section class="account-orders" id="orders"><p class="eyebrow">PAST PURCHASES</p><h2>Your orders</h2><div data-order-list></div></section>
+    <button class="button button-outline" data-logout="">
+     Log out
+    </button>
+   </div>
+   <div class="account-grid">
+    <section class="account-card">
+     <p class="eyebrow">
+      ACCOUNT DETAILS
+     </p>
+     <form class="profile-form" data-profile-form="">
+      <label>
+       First name
+       <input autocomplete="given-name" name="firstName" required="" type="text"/>
+      </label>
+      <label>
+       Last name
+       <input autocomplete="family-name" name="lastName" required="" type="text"/>
+      </label>
+      <label>
+       Email address
+       <input aria-describedby="email-note" name="email" readonly="" type="email"/>
+      </label>
+      <small id="email-note">
+       Email address is used to identify your account.
+      </small>
+      <button class="button button-dark" type="submit">
+       Save changes ↗
+      </button>
+     </form>
+    </section>
+    <aside class="account-card account-overview">
+     <p class="eyebrow">
+      YOUR AVINE
+     </p>
+     <a href="cart.html">
+      <strong data-profile-cart-count="">
+       0
+      </strong>
+      <span>
+       items in your bag
+      </span>
+      ↗
+     </a>
+     <a href="#orders">
+      <strong>
+       Order history
+      </strong>
+      <span>
+       See your confirmed purchases
+      </span>
+      ↗
+     </a>
+    </aside>
+   </div>
+   <section class="account-orders" id="orders">
+    <p class="eyebrow">
+     PAST PURCHASES
+    </p>
+    <h2>
+     Your orders
+    </h2>
+    <div data-order-list="">
+    </div>
+   </section>
   </main>
   <footer class="site-footer">
-    <div class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]">
-      <div class="footer-top grid grid-cols-[1.3fr_.7fr_.8fr_.8fr_1.35fr] gap-[35px] pb-[57px] max-[1200px]:grid-cols-[1.1fr_.7fr_.8fr_.8fr_1.2fr] max-[1200px]:gap-5 max-[760px]:grid-cols-2 max-[760px]:gap-x-[18px] max-[760px]:gap-y-8 max-[760px]:pb-[35px]">
-        <div class="footer-brand">
-          <a class="brand" href="index.html">AVINE<span class="brand-dot">.</span></a>
-          <p>Good things, thoughtfully made.<br>Technology for the life you live.</p>
-        </div>
-        <div class="footer-column">
-          <h4>Explore</h4>
-          <a href="shop.html">Shop all</a>
-          <a href="shop.html?category=Phones">Phones</a>
-          <a href="shop.html?category=Audio">Audio</a>
-          <a href="about-faq.html">Our story</a>
-        </div>
-        <div class="footer-column">
-          <h4>We're here</h4>
-          <a href="about-faq.html#faq">FAQs</a>
-          <a href="contact.html">Contact us</a>
-          <a href="contact.html">Shipping &amp; returns</a>
-          <a href="account.html">My account</a>
-        </div>
-        <div class="footer-column footer-social">
-          <h4>Follow along</h4>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest ↗</a>
-          <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
-        </div>
-        <div class="footer-newsletter">
-          <h4>A good email, occasionally.</h4>
-          <p>New things, thoughtful notes. Never noise.</p>
-          <form class="newsletter-form flex">
-            <input class="min-w-0 flex-1 bg-transparent" type="email" placeholder="Your email address" aria-label="Your email address" required>
-            <button aria-label="Subscribe">↗</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom flex items-center justify-between border-t border-[#495148] pt-[17px] text-[8px] text-[#aeb5ab] dark:border-[#374138] max-[760px]:grid max-[760px]:grid-cols-[1fr_auto] max-[760px]:gap-3">
-        <span>© Avine. All rights reserved.</span>
-        <span>MADE FOR THE MOMENTS IN BETWEEN.</span>
-        <a href="about-faq.html">Terms &amp; privacy</a>
-      </div>
+   <div class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]">
+    <div class="footer-top grid grid-cols-[1.3fr_.7fr_.8fr_.8fr_1.35fr] gap-[35px] pb-[57px] max-[1200px]:grid-cols-[1.1fr_.7fr_.8fr_.8fr_1.2fr] max-[1200px]:gap-5 max-[760px]:grid-cols-2 max-[760px]:gap-x-[18px] max-[760px]:gap-y-8 max-[760px]:pb-[35px]">
+     <div class="footer-brand">
+      <a class="brand" href="index.html">
+       AVINE
+       <span class="brand-dot">
+        .
+       </span>
+      </a>
+      <p>
+       Good things, thoughtfully made.
+       <br/>
+       Technology for the life you live.
+      </p>
+     </div>
+     <div class="footer-column">
+      <h4>
+       Explore
+      </h4>
+      <a href="shop.html">
+       Shop all
+      </a>
+      <a href="shop.html?category=Phones">
+       Phones
+      </a>
+      <a href="shop.html?category=Audio">
+       Audio
+      </a>
+      <a href="about-faq.html">
+       Our story
+      </a>
+     </div>
+     <div class="footer-column">
+      <h4>
+       We're here
+      </h4>
+      <a href="about-faq.html#faq">
+       FAQs
+      </a>
+      <a href="contact.html">
+       Contact us
+      </a>
+      <a href="contact.html">
+       Shipping &amp; returns
+      </a>
+      <a href="account.html">
+       My account
+      </a>
+     </div>
+     <div class="footer-column footer-social">
+      <h4>
+       Follow along
+      </h4>
+      <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
+       Instagram ↗
+      </a>
+      <a href="https://www.pinterest.com/" rel="noopener noreferrer" target="_blank">
+       Pinterest ↗
+      </a>
+      <a href="https://www.tiktok.com/" rel="noopener noreferrer" target="_blank">
+       TikTok ↗
+      </a>
+     </div>
+     <div class="footer-newsletter">
+      <h4>
+       A good email, occasionally.
+      </h4>
+      <p>
+       New things, thoughtful notes. Never noise.
+      </p>
+      <form class="newsletter-form flex">
+       <input aria-label="Your email address" class="min-w-0 flex-1 bg-transparent" placeholder="Your email address" required="" type="email"/>
+       <button aria-label="Subscribe">
+        ↗
+       </button>
+      </form>
+     </div>
     </div>
+    <div class="footer-bottom flex items-center justify-between border-t border-[#495148] pt-[17px] text-[8px] text-[#aeb5ab] dark:border-[#374138] max-[760px]:grid max-[760px]:grid-cols-[1fr_auto] max-[760px]:gap-3">
+     <span>
+      © Avine. All rights reserved.
+     </span>
+     <span>
+      MADE FOR THE MOMENTS IN BETWEEN.
+     </span>
+     <a href="about-faq.html">
+      Terms &amp; privacy
+     </a>
+    </div>
+   </div>
   </footer>
-  <script src="script.js"></script>
-</body>
+  <script src="script.js">
+  </script>
+ </body>
 </html>
+
