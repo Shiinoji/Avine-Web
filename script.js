@@ -137,6 +137,15 @@ const products = [
     description:
       "G512 is a high-performance gaming keyboard featuring your choice of advanced Romer-G Tactile, Romer-G Linear and GX Blue mechanical switches.",
   },
+  {
+    id: "phone-Nothing-3A-pro",
+    name: "Nothing Phone 3A Pro",
+    category: "Phones",
+    price: 20999,
+    image: "assets/Nothing Phone 3A Pro.jpg",
+    description:
+      "Nothing Phone (3a) Pro Android smartphone. Announced Mar 2025. Features 6.77″ display, Snapdragon 7s Gen 3 chipset, 5000 mAh battery, 256 GB storage, 12 GB RAM, Panda Glass.",
+  },
   ];
 
 // Uses the Philippine peso format consistently across the storefront.
