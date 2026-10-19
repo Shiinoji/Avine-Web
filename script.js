@@ -146,6 +146,15 @@ const products = [
     description:
       "Nothing Phone (3a) Pro Android smartphone. Announced Mar 2025. Features 6.77″ display, Snapdragon 7s Gen 3 chipset, 5000 mAh battery, 256 GB storage, 12 GB RAM, Panda Glass.",
   },
+  {
+    id: "laptop-lenovo-Legion-Pro-7i",
+    name: "Lenovo Legion Pro 7i",
+    category: "Laptops",
+    price: 440713,
+    image: "assets/Lenovo Legion Pro 7o.jpg",
+    description:
+      "Experience next-level gaming and productivity with Intel® Core™ Ultra processors. Enjoy ultra-smooth gameplay, seamless multitasking, and AI-accelerated creative tasks.",
+  },
   ];
 
 // Uses the Philippine peso format consistently across the storefront.
