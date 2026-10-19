@@ -49,7 +49,7 @@ const products = [
   },
   {
     id: "gpu-rtx-5060",
-    name: "Gigabyte GeForce RTX 5060 Ti WINDFORCE OC 16G",
+    name: "Gigabyte GeForce RTX 5060",
     category: "Graphics Cards",
     price: 159990,
     image: "assets/Gigabyte RTX 5060.jpg",
@@ -67,7 +67,7 @@ const products = [
   },
   {
     id: "Benq-Led-Monitor",
-    name: "BenQ GW2490T 23.8-inch Full HD IPS 100Hz Monitor",
+    name: "BenQ GW2490T Monitor",
     category: "Monitors",
     price: 13000,
     image: "assets/Benq LED Monitor.jpg",
@@ -111,6 +111,22 @@ const products = [
     image: "assets/Ajazz AK860 Mechanical Keyboard.jpg",
     description:
       "Ajazz AK860 mechanical keyboard with a compact key layout and rotary control, shown in a clean gray-and-white finish.",
+  },
+  {
+  id: "headphones-encalife-over-ear",
+  name: "Encalife Bluetooth Headphones",
+  category: "Accessories",
+  price: 1255,
+  image: "assets/encalife headphones.jpg",
+  description: "Over-ear Bluetooth headphones with deep bass, microphone included, designed for gaming and everyday use.",
+},
+{
+  id: "laptop-ryzen5-3500u-15-6",
+  name: "DREAMFYRE Laptop Ryzen 5 3500U",
+  category: "Laptops",
+  price: 36873,
+  image: "assets/dreamfyre laptop.jpg",
+  description: "15.6-inch laptop with AMD Ryzen 5 3500U quad-core processor, 16GB DDR4 RAM, 512GB SSD, fingerprint reader, Full HD display, WiFi 2.45G, Bluetooth, HDMI port, and backlit keyboard.",
   },
 ];
 
