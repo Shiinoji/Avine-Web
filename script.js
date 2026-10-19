@@ -129,6 +129,15 @@ const products = [
   description: "15.6-inch laptop with AMD Ryzen 5 3500U quad-core processor, 16GB DDR4 RAM, 512GB SSD, fingerprint reader, Full HD display, WiFi 2.45G, Bluetooth, HDMI port, and backlit keyboard.",
   },
 ];
+{
+    id: "keyboard-Logitech-G512",
+    name: "Logitech G512 Carbon RGB Mechanical Gaming Keyboard ",
+    category: "Accessories",
+    price: 5600,
+    image: "assets/Logitech G512.jpg",
+    description:
+      "G512 is a high-performance gaming keyboard featuring your choice of advanced Romer-G Tactile, Romer-G Linear and GX Blue mechanical switches.",
+  },
 
 // Uses the Philippine peso format consistently across the storefront.
 const formatPrice = (price) =>
