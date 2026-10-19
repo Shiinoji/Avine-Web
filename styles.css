@@ -2435,7 +2435,6 @@ button {
 }
 .quick-image {
   background-color: #f0f0e9;
-  background-blend-mode: multiply;
 }
 .quick-modal .modal-close {
   width: 34px;
