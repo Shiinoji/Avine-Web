@@ -151,7 +151,7 @@ const products = [
     name: "Lenovo Legion Pro 7i",
     category: "Laptops",
     price: 440713,
-    image: "assets/Lenovo Legion Pro 7o.jpg",
+    image: "assets/Lenovo Legion Pro 7i.jpg",
     description:
       "Experience next-level gaming and productivity with Intel® Core™ Ultra processors. Enjoy ultra-smooth gameplay, seamless multitasking, and AI-accelerated creative tasks.",
   },
