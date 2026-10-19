@@ -453,6 +453,142 @@ function productCard(product) {
   </article>`;
 }
 
+function initProductSearch() {
+  document.querySelectorAll(".search-form").forEach((form, index) => {
+    const input = form.querySelector('input[name="q"]');
+    if (!input) return;
+
+    const listId = `product-search-suggestions-${index}`;
+    const list = document.createElement("div");
+    list.className = "search-suggestions";
+    list.id = listId;
+    list.setAttribute("role", "listbox");
+    list.hidden = true;
+    form.append(list);
+
+    input.setAttribute("role", "combobox");
+    input.setAttribute("aria-autocomplete", "list");
+    input.setAttribute("aria-controls", listId);
+    input.setAttribute("aria-expanded", "false");
+
+    let activeIndex = -1;
+    let matches = [];
+
+    const closeSuggestions = () => {
+      list.hidden = true;
+      input.setAttribute("aria-expanded", "false");
+      input.removeAttribute("aria-activedescendant");
+      activeIndex = -1;
+    };
+
+    const selectProduct = (product) => {
+      const destination = new URL(form.action, window.location.href);
+      destination.searchParams.set("q", product.name);
+      window.location.href = destination.href;
+    };
+
+    const updateActiveOption = () => {
+      const options = list.querySelectorAll('[role="option"]');
+      options.forEach((option, optionIndex) => {
+        option.setAttribute(
+          "aria-selected",
+          String(optionIndex === activeIndex),
+        );
+      });
+      if (activeIndex >= 0) {
+        input.setAttribute(
+          "aria-activedescendant",
+          `${listId}-option-${activeIndex}`,
+        );
+      } else {
+        input.removeAttribute("aria-activedescendant");
+      }
+    };
+
+    const renderSuggestions = () => {
+      const query = input.value.trim().toLowerCase();
+      activeIndex = -1;
+      list.replaceChildren();
+      if (!query) {
+        closeSuggestions();
+        return;
+      }
+
+      matches = products
+        .filter((product) =>
+          `${product.name} ${product.category} ${product.description}`
+            .toLowerCase()
+            .includes(query),
+        )
+        .slice(0, 5);
+      if (matches.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "search-suggestions-empty";
+        empty.textContent = "No matching products";
+        list.append(empty);
+      } else {
+        matches.forEach((product, productIndex) => {
+          const option = document.createElement("button");
+          option.type = "button";
+          option.className = "search-suggestion";
+          option.id = `${listId}-option-${productIndex}`;
+          option.dataset.productIndex = String(productIndex);
+          option.setAttribute("role", "option");
+          option.setAttribute("aria-selected", "false");
+
+          const details = document.createElement("span");
+          details.className = "search-suggestion-details";
+          const name = document.createElement("strong");
+          name.textContent = product.name;
+          const category = document.createElement("small");
+          category.textContent = product.category;
+          details.append(name, category);
+
+          const price = document.createElement("span");
+          price.className = "search-suggestion-price";
+          price.textContent = formatPrice(product.price);
+          option.append(details, price);
+          list.append(option);
+        });
+      }
+      list.hidden = false;
+      input.setAttribute("aria-expanded", "true");
+    };
+
+    input.addEventListener("input", renderSuggestions);
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeSuggestions();
+      } else if (event.key === "ArrowDown" && !list.hidden && matches.length) {
+        event.preventDefault();
+        activeIndex = (activeIndex + 1) % matches.length;
+        updateActiveOption();
+      } else if (
+        event.key === "ArrowUp" &&
+        !list.hidden &&
+        matches.length
+      ) {
+        event.preventDefault();
+        activeIndex = (activeIndex - 1 + matches.length) % matches.length;
+        updateActiveOption();
+      } else if (event.key === "Enter" && activeIndex >= 0) {
+        event.preventDefault();
+        selectProduct(matches[activeIndex]);
+      }
+    });
+    list.addEventListener("click", (event) => {
+      const option = event.target.closest('[role="option"]');
+      if (!option) return;
+      const selectedIndex = Number(option.dataset.productIndex);
+      const product = matches[selectedIndex];
+      if (product) selectProduct(product);
+    });
+    document.addEventListener("click", (event) => {
+      if (!form.contains(event.target)) closeSuggestions();
+    });
+  });
+}
+
 // Adds shared site interactions: theme toggle, mobile menu, quick-view modal, and cart updates.
 function initGlobalInteractions() {
   document.querySelectorAll(".theme-toggle").forEach((button) =>
@@ -563,6 +699,7 @@ function initGlobalInteractions() {
 
 // Shared setup is loaded on every page; page-only behavior lives in js/pages/.
 document.addEventListener("DOMContentLoaded", () => {
+  initProductSearch();
   initGlobalInteractions();
 });
 
