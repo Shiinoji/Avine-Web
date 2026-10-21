@@ -1,3 +1,12 @@
+/*
+ * AVINE E-Commerce Website
+ * Developed by: Avegail Golpe, Neil Peladra, Vince Tipones
+ * IT ELEC 3 - Web Systems and Technologies
+ *
+ * This JavaScript file is part of the AVINE academic project.
+ * External libraries and resources belong to their respective owners.
+ */
+
 // Authentication-page behavior: sign-in, sign-up, validation, and redirects.
 function initAuth() {
   const forms = document.querySelectorAll(".auth-form");

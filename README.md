@@ -20,5 +20,3 @@ page behavior can use those shared helpers without loading unrelated page logic.
 | `checkout.html` | `js/pages/checkout.js` | Checkout summary and order creation |
 | `about-faq.html` | — | Shared behavior; native `<details>` handles FAQ disclosures |
 
-Keep reusable functionality in `script.js` and add page-only behavior to the
-matching file under `js/pages/`. Load the common script first in each HTML page.
