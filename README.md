@@ -1,6 +1,6 @@
-Central Bicol State University of Agriculture - Sipocot
+## Central Bicol State University of Agriculture - Sipocot
 
-This project is for the midterm examination in IT ELECT 3.
+## This project is for the midterm examination in IT ELECT 3.
 
 ## JavaScript layout
 
