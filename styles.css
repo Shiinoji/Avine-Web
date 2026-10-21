@@ -3244,6 +3244,14 @@ html.dark body {
   padding-top: 43px;
   padding-bottom: 90px;
 }
+body[data-page="checkout"] {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+body[data-page="checkout"] > .commerce-page {
+  flex: 1;
+}
 .commerce-page > .eyebrow {
   margin-bottom: 34px;
 }
@@ -3501,10 +3509,25 @@ html.dark body {
   margin-bottom: 0;
 }
 .checkout-form > .button {
+  display: inline-flex;
+  width: 100%;
   min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
   border: 0;
+  background: #222b24;
+  color: #fff;
   cursor: pointer;
   font-size: 10px;
+  font-weight: 600;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.checkout-form > .button:hover {
+  transform: translateY(-2px);
+  background: #39483b;
 }
 .checkout-fields-row {
   display: grid;

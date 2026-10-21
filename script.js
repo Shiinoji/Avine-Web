@@ -165,6 +165,24 @@ const products = [
     description:
       "Experience next-level gaming and productivity with Intel® Core™ Ultra processors. Enjoy ultra-smooth gameplay, seamless multitasking, and AI-accelerated creative tasks.",
   },
+  {
+    id: "Redmagic-11s-Pro",
+    name: "Redmagic 11s Pro",
+    category: "Phones",
+    price: 39990,
+    image: "assets/Redmagic 11s Pro.jpg",
+    description:
+      "Redmagic 11s Pro gaming smartphone. Features 6.8″ AMOLED display, Snapdragon 8 Gen 3 chipset, 6000 mAh battery, 512 GB storage, 16 GB RAM, and advanced cooling system.",
+  },
+  {
+    id: "Redmagic-7s-Pro",
+    name: "Redmagic 7s Pro",
+    category: "Phones",
+    price: 34990,
+    image: "assets/Redmagic 7s Pro.jpg",
+    description:
+      "Redmagic 7s Pro gaming smartphone. Features 6.8″ AMOLED display, Snapdragon 8 Gen 3 chipset, 6000 mAh battery, 512 GB storage, 16 GB RAM, and advanced cooling system.",
+  }
   ];
 
 // Uses the Philippine peso format consistently across the storefront.
