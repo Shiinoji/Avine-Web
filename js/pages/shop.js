@@ -17,7 +17,7 @@ const shopState = {
   page: 1,
   perPage: 6,
 };
-
+//Filter products based on the current shop state (category, price range, search query, and sort order).
 function getFilteredProducts() {
   let filtered = products.filter((product) => {
     const matchesCategory =
@@ -41,7 +41,7 @@ function getFilteredProducts() {
     filtered.sort((a, b) => a.name.localeCompare(b.name));
   return filtered;
 }
-
+//Render the shop grid based on the current shop state, including pagination and result count.
 function renderShop() {
   const grid = document.querySelector('[data-products="shop"]');
   if (!grid) return;
@@ -63,7 +63,7 @@ function renderShop() {
         : `Showing all ${filtered.length}`;
   renderPagination(pageCount);
 }
-
+//Render pagination buttons based on the current page and total page count.
 function renderPagination(pageCount) {
   const pagination = document.querySelector(".pagination");
   if (!pagination) return;
@@ -80,7 +80,7 @@ function renderPagination(pageCount) {
   );
   pagination.innerHTML = buttons.join("");
 }
-
+//Initialize the shop page by setting up event listeners for filters, sorting, and pagination, and rendering the initial product grid.
 function initShop() {
   const grid = document.querySelector('[data-products="shop"]');
   if (!grid) return;

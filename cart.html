@@ -107,7 +107,6 @@
           </h1>
           <p>Good things, ready when you are.</p>
         </div>
-        <a class="text-link" href="shop.html"> Keep exploring ↗ </a>
       </div>
       <div class="cart-layout">
         <section
@@ -126,20 +125,79 @@
             <strong data-cart-total-price=""> ₱0 </strong>
           </div>
           <p class="muted-copy">Shipping is calculated at checkout.</p>
-          <button class="button button-dark" data-cart-checkout="" hidden="">
-            Continue to checkout ↗
+          <button
+            class="button button-dark"
+            type="button"
+            data-cart-checkout=""
+            hidden=""
+          >
+            Continue to checkout
           </button>
           <button class="cart-clear" data-cart-clear="">Clear bag</button>
         </aside>
       </div>
     </main>
     <footer class="site-footer">
-      <div class="section-wrap">
-        <a class="brand" href="index.html">
-          AVINE
-          <span class="brand-dot"> . </span>
-        </a>
-        <p>Good things, thoughtfully made.</p>
+      <div
+        class="section-wrap mx-auto w-[min(1280px,calc(100%-104px))] max-[1200px]:w-[calc(100%-60px)] max-[760px]:w-[calc(100%-40px)]"
+      >
+        <div
+          class="footer-top grid grid-cols-[1.3fr_.7fr_.8fr_.8fr_1.35fr] gap-[35px] pb-[57px] max-[1200px]:grid-cols-[1.1fr_.7fr_.8fr_.8fr_1.2fr] max-[1200px]:gap-5 max-[760px]:grid-cols-2 max-[760px]:gap-x-[18px] max-[760px]:gap-y-8 max-[760px]:pb-[35px]"
+        >
+          <div class="footer-brand">
+            <a class="brand" href="index.html"
+              >AVINE<span class="brand-dot">.</span></a
+            >
+            <p>
+              Good things, thoughtfully made.<br />Technology for the life you
+              live.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Explore</h4>
+            <a href="shop.html">Shop all</a
+            ><a href="shop.html?category=Phones">Phones</a
+            ><a href="shop.html?category=Graphics%20Cards">Graphics Cards</a
+            ><a href="shop.html?category=Accessories">Accessories</a
+            ><a href="about-faq.html">Our story</a>
+          </div>
+          <div class="footer-column">
+            <h4>We're here</h4>
+            <a href="about-faq.html#faq">FAQs</a
+            ><a href="contact.html">Contact us</a
+            ><a href="contact.html">Shipping &amp; returns</a
+            ><a href="auth.html">My account</a>
+          </div>
+          <div class="footer-column footer-social">
+            <h4>Follow along</h4>
+            <a href="https://www.instagram.com/">Instagram</a
+            ><a href="https://www.pinterest.com/">Pinterest</a
+            ><a href="https://www.tiktok.com/">TikTok</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>A good email, occasionally.</h4>
+            <p>New things, thoughtful notes. Never noise.</p>
+            <form class="newsletter-form flex">
+              <input
+                class="min-w-0 flex-1 bg-transparent"
+                type="email"
+                placeholder="Your email address"
+                aria-label="Your email address"
+                required
+              /><button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="footer-bottom flex items-center justify-between border-t border-[#495148] pt-[17px] text-[8px] text-[#aeb5ab] dark:border-[#374138] max-[760px]:grid max-[760px]:grid-cols-[1fr_auto] max-[760px]:gap-3"
+        >
+          <span
+            >Copyright Avine Group, this project is for school purposes
+            only.</span
+          >
+          <span>MADE FOR THE MOMENTS IN BETWEEN.</span
+          ><a href="about-faq.html">Terms &amp; privacy</a>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>

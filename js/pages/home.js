@@ -28,7 +28,7 @@ const slides = [
     image: "assets/Arus GeForce RTX 5090.jpg",
   },
 ];
-
+//Initialize the home page by rendering featured products and setting up the hero carousel.
 function initHome() {
   const featured = document.querySelector('[data-products="featured"]');
   if (featured)

@@ -11,6 +11,7 @@
 // Avine storefront data and client-side interactions.
 // Shared catalog, storage, account, cart, and site-wide UI helpers for each page script.
 
+//Additional product data can be added to the `products` array below, following the existing structure. Each product should have a unique `id`, a `name`, a `category`, a `price`, an `image` URL, and a `description`. Optional fields like `tag` can also be included for special labels or promotions.
 const products = [
   {
     id: "phone-poco-f9",

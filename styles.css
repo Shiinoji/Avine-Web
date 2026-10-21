@@ -3309,6 +3309,9 @@ body[data-page="checkout"] > .commerce-page {
 .cart-item > .quantity-control {
   grid-column: 2;
 }
+.cart-item .quantity-control {
+  border: 0;
+}
 .quantity-control {
   display: flex;
   align-items: center;
@@ -3367,8 +3370,28 @@ body[data-page="checkout"] > .commerce-page {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 16px;
+  border: 0;
+  background: #222b24;
+  color: #fff;
+  cursor: pointer;
   margin: 17px 0 12px;
   font-size: 10px;
+  font-weight: 600;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.cart-summary > .button[hidden] {
+  display: none;
+}
+.cart-summary > .button:hover {
+  transform: translateY(-2px);
+  background: #39483b;
+}
+.cart-summary > .button:focus-visible {
+  outline: 2px solid #8ba66c;
+  outline-offset: 3px;
 }
 .cart-summary .cart-clear {
   display: block;
@@ -3590,6 +3613,13 @@ body[data-page="checkout"] > .commerce-page {
 .dark .account-card {
   background: #202823;
   border-color: #39443b;
+}
+.dark .cart-summary > .button {
+  background: #c7d9ad;
+  color: #182019;
+}
+.dark .cart-summary > .button:hover {
+  background: #d7e5c6;
 }
 .dark .profile-form input,
 .dark .checkout-fields-row input {
