@@ -183,10 +183,19 @@ const products = [
     image: "assets/Redmagic 7s Pro.jpg",
     description:
       "Redmagic 7s Pro gaming smartphone. Features 6.8″ AMOLED display, Snapdragon 8 Gen 3 chipset, 6000 mAh battery, 512 GB storage, 16 GB RAM, and advanced cooling system.",
+  },
+  {
+    id: "Poco-X6",
+    name:"Poco X6",
+    category: "Phones",
+    price: "15999",
+    image: "assets/Xiaomi X6.jpg",
+    description: "Poco X6 smartphone. Features 6.67″ AMOLED display, Snapdragon 4 Gen 1 chipset, 5000 mAh battery, 256 GB storage, 8 GB RAM, and high-resolution camera system.",
   }
   ];
 
-// Uses the Philippine peso format consistently across the storefront.
+// Uses the Philippine peso format consistently 
+// across the storefront.
 const formatPrice = (price) =>
   new Intl.NumberFormat("en-PH", {
     style: "currency",
